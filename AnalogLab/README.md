@@ -88,6 +88,7 @@ void loop() {
 #### Lab Task #1
 
 Once you have completed this portion expand the code to display the following colors:
+
 1. Red
 2. Green
 3. Blue
