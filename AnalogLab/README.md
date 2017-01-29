@@ -16,15 +16,15 @@ RGB stands for Red, Green, and Blue. RGB LEDs combine these three colors to prod
 <table style="margin-left: auto; margin-right: auto;" border="0">
 <tbody>
 <tr>
-<td><img style="width: 400; height: 250px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AdditiveColor.svg/1024px-AdditiveColor.svg.png" alt="" /></td>
-<td><img style="width: 400; height: 250px;" src="https://cdn.sparkfun.com/assets/learn_tutorials/3/6/0/RGBPinOUt.png" alt="" /></td>
+<td><img style="width: 250; height: 250px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AdditiveColor.svg/1024px-AdditiveColor.svg.png" alt="" /></td>
+<td><img style="width: 250; height: 250px;" src="https://cdn.sparkfun.com/assets/learn_tutorials/3/6/0/RGBPinOUt.png" alt="" /></td>
 </tr>
 </tbody>
 </table>
 
 In this session we are using a common cathode RGB LED. This means that we have a lead for every color and a common pin connected to ground. We will be building a simple circuit that will cycle the LED through red, green, and blue. See the diagram below.
 
-<img style="width: 500; height:300px;" src="https://github.com/xaviermerino/ECE1552/blob/master/AnalogLab/firstSketch.jpg?raw=true"/>
+<img style="width: 400; height:300px;" src="https://github.com/xaviermerino/ECE1552/blob/master/AnalogLab/firstSketch.jpg?raw=true"/>
 
 In other words:
 * Connect the **red** anode to pin 9 in the Arduino. Don't forget the small resistor that connects it to ground.
