@@ -24,7 +24,7 @@ RGB stands for Red, Green, and Blue. RGB LEDs combine these three colors to prod
 
 In this session we are using a common cathode RGB LED. This means that we have a lead for every color and a common pin connected to ground. We will be building a simple circuit that will cycle the LED through red, green, and blue. See the diagram below.
 
-<img  src="https://github.com/xaviermerino/ECE1552/blob/master/AnalogLab/firstSketch.jpg?raw=true" height="300" width="400"/>
+<img  src="https://github.com/xaviermerino/ECE1552/blob/master/AnalogLab/firstSketch.jpg?raw=true" height="400" width="500"/>
 
 In other words:
 * Connect the **red** anode to pin 9 in the Arduino. Don't forget the small resistor that connects it to ground.
@@ -32,7 +32,7 @@ In other words:
 * Connect the **blue** anode to pin 11 in the Arduino. Don't forget the small resistor that connects it to ground.
 * Connect the **common cathode** to ground.
 
-Let's first declare variables that will represent the pins mentioned above.
+Let's first declare variables that will represent the pins mentioned above. A **variable** is a named entity that we can use in our program to store data. Variables can be of different data types such as integers or characters, etc. For now we will stick with integers (called `int` in your sketch). We will use the variables to store the pin numbers we are using to connect our RGB LED. We are doing this so that we can refer to the pins by a name rather than by its number. Variables are case sensitive!
 
 ```c++
 const int redPin = 9;
@@ -40,7 +40,7 @@ const int greenPin = 10;
 const int bluePin = 11;
 ```
 
-In the `setup()` portion of the sketch we must set these pins to **output** to allow them to drive the RGB LED.
+The variables above are *global variables* because they were declared outside the `setup()` and `loop()` functions. This means they are accessible from all portions of the code. In the `setup()` portion of the sketch we must set these pins to **output** to allow them to drive the RGB LED. Notice how we are using the variables instead of the pin numbers.
 
 ```c++
 void setup() {
@@ -97,12 +97,31 @@ Expand the code above to display the following colors:
 6. Cyan
 7. White
 
-Instead of automatically cycling through the colors every second, plug in a push button that when pressed changes the color. Don't forget to debounce the button signal. Once you are done with this task show it to your TA for credit. 
+Instead of automatically cycling through the colors every second, plug in a push button that when pressed changes the color. Don't forget to debounce the button signal. Once you are done with this task show it to your TA for credit.
 
 ### Introduction to Photoresistors
 
-Photoresistors, or light-dependent resistors, are components whose resistance is controlled by the incident light intensity. Their resistance decreases when light shines upon them. You might have seen them in photocells on the streets as they are responsible for ensuring that the light is only on during darkness. 
+Photoresistors, or light-dependent resistors, are components whose resistance is controlled by the incident light intensity. Their resistance decreases when light shines upon them. You might have seen them in photocells on the streets as they are responsible for ensuring that the light is only on during darkness.
 
-In this lab we will be using the Arduino to read the input of the photoresistor. Until now, we have been focused on digital inputs (i.e. the push button) and so we haven't discussed the ADC (Analog-to-Digital Converter) capabilities of the Arduino. 
+In this lab we will be using the Arduino to read the input of the photoresistor. See the diagram below.
 
+<img  src="https://github.com/xaviermerino/ECE1552/blob/master/AnalogLab/secondSketch.jpg?raw=true" height="400" width="500"/>
+
+In other words:
+* Connect the RGB LED as shown in the previous section.
+* Connect one lead of the photoresistor to 5V.
+* Connect the remaining lead of the photoresistor to pin A0 in the Arduino.
+* Connect the same lead to ground via a small resistor.
+* Connect another LED's anode to pin 13.
+* Connect the other LED's cathode to ground via a small resistor.
+
+Let's add to the variable declaration from the previous section.
+
+```c++
+const int redPin = 9;
+const int greenPin = 10;
+const int bluePin = 11;
+const int calibrationPin = 13;
+const int photoresistorPin = A0;
+```
 
