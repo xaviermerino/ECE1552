@@ -32,7 +32,7 @@ In other words:
 * Connect the **blue** anode to pin 11 in the Arduino. Don't forget the small resistor that connects it to ground.
 * Connect the **common cathode** to ground.
 
-Let's first declare variables that will represent the pins mentioned above. A **variable** is a named entity that we can use in our program to store data. Variables can be of different data types such as integers or characters, etc. For now we will stick with integers (called `int` in your sketch). We will use the variables to store the pin numbers we are using to connect our RGB LED. We are doing this so that we can refer to the pins by a name rather than by its number. Variables are case sensitive!
+Let's first declare variables that will represent the pins mentioned above. A **variable** is a named entity that we can use in our program to store data. Variables can be of different data types such as integers or characters, etc. For now we will stick with integers or whole numbers (called `int` in your sketch). We will use the variables to store the pin numbers we are using to connect our RGB LED. We are doing this so that we can refer to the pins by a name rather than by its number. Variables are case sensitive!
 
 ```c++
 const int redPin = 9;
@@ -137,6 +137,36 @@ We declared `calibrationPin` to refer to pin 13. This pin will turn on the LED a
 
 In the `setup()` function we set the pins associated with the RGB LED and the calibration pin as output. The `photoresistorPin` was set up as an input pin since we are going to be reading values from the sensor attached to it.
 
-The Arduino has a 10-bit resolution **analog-to-digital converter (ADC)**. An ADC converts analog signals such as sound or light into a digital signal. In this case we are converting light intensity into a digital signal that can be interpreted by the Arduino. The resolution of an Analog-to-Digital Converter indicates the number of voltage levels it can produce. The Arduino's 10-bit ADC allows representing 5 volts in 1024 (2^10) levels. This means that 0V at an analog pin will be interpreted as 0 and 5V will be interpreted as 1023.
+The Arduino has a 10-bit resolution **analog-to-digital converter (ADC)**. An ADC converts analog signals such as sound or light into a digital signal. In this case we are converting light intensity into a digital signal that can be interpreted by the Arduino. The resolution of an Analog-to-Digital Converter indicates the number of voltage levels it can produce. The Arduino's 10-bit ADC allows representing 5 volts in 1024 (2^10) levels. This means that 0V at an analog pin will be interpreted as 0 and 5V will be interpreted as 1023. Therefore, readings at any analog pin will range from 0 to 1023. If you want the full range of readings you will need a sensor that varies from 0 to 5V and a full range of inputs that would trigger those responses.
 
-Let's
+Let's continue adding to the `setup()` function. With the newest additions, the code is able to tune in our sensor. We know that an analog pin input can range from 0 to 5V which get mapped to integers 0 - 1023.
+
+```c++
+int sensorValue = 0;
+int sensorMin = 1023;
+int sensorMax = 0;
+
+void setup() {
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
+  pinMode(calibrationPin, OUTPUT);
+  pinMode(photoresistorPin, INPUT);
+
+  digitalWrite(calibrationPin, HIGH);
+
+  while(millis() < 5000){
+    sensorValue = analogRead(photoresistorPin);
+
+    if (sensorValue > sensorMax){
+      sensorMax = sensorValue;
+    }
+
+    if (sensorValue < sensorMin){
+      sensorMin = sensorValue;
+    }
+  }
+
+  digitalWrite(calibrationPin, LOW);
+}
+```
