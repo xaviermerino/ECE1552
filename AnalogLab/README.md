@@ -123,5 +123,20 @@ const int greenPin = 10;
 const int bluePin = 11;
 const int calibrationPin = 13;
 const int photoresistorPin = A0;
+
+void setup(){
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
+  pinMode(calibrationPin, OUTPUT);
+  pinMode(photoresistorPin, INPUT);
+}
 ```
 
+We declared `calibrationPin` to refer to pin 13. This pin will turn on the LED attached to it while the photoresistor is being tuned. We will explain this shortly. We also created the variable `photoresistorPin` to refer to pin A0 (analog pin 0).
+
+In the `setup()` function we set the pins associated with the RGB LED and the calibration pin as output. The `photoresistorPin` was set up as an input pin since we are going to be reading values from the sensor attached to it.
+
+The Arduino has a 10-bit resolution **analog-to-digital converter (ADC)**. An ADC converts analog signals such as sound or light into a digital signal. In this case we are converting light intensity into a digital signal that can be interpreted by the Arduino. The resolution of an Analog-to-Digital Converter indicates the number of voltage levels it can produce. The Arduino's 10-bit ADC allows representing 5 volts in 1024 (2^10) levels. This means that 0V at an analog pin will be interpreted as 0 and 5V will be interpreted as 1023.
+
+Let's
