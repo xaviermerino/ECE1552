@@ -177,3 +177,5 @@ void setup() {
   digitalWrite(calibrationPin, LOW);
 }
 ```
+
+The variable `sensorValue` is used to store the reading that comes from the photoresitor. The variables `sensorMin` and `sensorMax` are meant to store the lowest and the greatest reading from the sensor during the calibration period. After the pins have been set for input or output respectively, we turn on the LED connected to `calibrationPin` to mark the beginning of the calibration process. The calibration process lasts five seconds as you can see from `millis() < 5000`. The `while` loop repeats the statements that it encloses until five seconds have elapsed. It is going to repeatedly obtain a value from the photoresistor and save it in `sensorValue`. If `sensorValue` is greater than `sensorMax`, then `sensorMax` is updated to store that greater value. If `sensorValue` is lower than `sensorMin` then `sensorMin` is updated to store that lower value. At the end of the calibration period `sensorMin` will have the lowest value read and `sensorMax` will have the greatest value. We mark the end of the calibration period by turning off the LED attached to `calibrationPin`.
