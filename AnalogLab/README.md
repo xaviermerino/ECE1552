@@ -105,6 +105,7 @@ Photoresistors, or light-dependent resistors, are components whose resistance is
 
 In this lab we will be using the Arduino to read the input of the photoresistor. See the diagram below.
 
+<br>
 <img  src="https://github.com/xaviermerino/ECE1552/blob/master/AnalogLab/secondSketch.jpg?raw=true" height="400" width="500"/>
 
 In other words:
@@ -142,6 +143,12 @@ The Arduino has a 10-bit resolution **analog-to-digital converter (ADC)**. An AD
 Let's continue adding to the `setup()` function. With the newest additions, the code is able to tune in our sensor. We know that an analog pin input can range from 0 to 5V which get mapped to integers 0 - 1023.
 
 ```c++
+const int redPin = 9;
+const int greenPin = 10;
+const int bluePin = 11;
+const int calibrationPin = 13;
+const int photoresistorPin = A0;
+
 int sensorValue = 0;
 int sensorMin = 1023;
 int sensorMax = 0;
