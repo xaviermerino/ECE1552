@@ -16,7 +16,7 @@ RGB stands for Red, Green, and Blue. RGB LEDs combine these three colors to prod
 <table style="margin-left: auto; margin-right: auto;" border="0">
 <tbody>
 <tr>
-<td><img width: "250" height: "250" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AdditiveColor.svg/1024px-AdditiveColor.svg.png" alt="" /></td>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AdditiveColor.svg/1024px-AdditiveColor.svg.png" height="250" width="250" /></td>
 <td><img style="width: 250; height: 250px;" src="https://cdn.sparkfun.com/assets/learn_tutorials/3/6/0/RGBPinOUt.png" alt="" /></td>
 </tr>
 </tbody>
