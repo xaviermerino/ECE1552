@@ -12,12 +12,12 @@ In this lab you will become familiar with analog inputs while rehearsing the ski
 
 ### Introduction to RGB LEDs
 RGB stands for Red, Green, and Blue. RGB LEDs combine these three colors to produce different hues of light. Because the combination of RGB colors result in limited hues, you can only get the colors within the RGB gamut.
-
+<br>
 <table style="margin-left: auto; margin-right: auto;" border="0">
 <tbody>
 <tr>
-<td><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AdditiveColor.svg/1024px-AdditiveColor.svg.png" alt="" height="350" width="350"/></td>
-<td><img src="https://cdn.sparkfun.com/assets/learn_tutorials/3/6/0/RGBPinOUt.png" alt="" height="350" width="350"/></td>
+<td><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AdditiveColor.svg/1024px-AdditiveColor.svg.png" alt="" height="325" width="325"/></td>
+<td><img src="https://cdn.sparkfun.com/assets/learn_tutorials/3/6/0/RGBPinOUt.png" alt="" height="325" width="325"/></td>
 </tr>
 </tbody>
 </table>
