@@ -194,18 +194,18 @@ In this case we have chosen our scale to be from 0 to 255 (there is a reason why
 * **Green:** 85 < x < 170
 * **Blue:** 170 < x < 255
 
-Let's focus on the `loop()` function that will make what we talked above possible. 
+Let's focus on the `loop()` function that will make what we talked above possible.
 
 ```c++
 void loop() {
-  // INSTRUCTIONS: 
+  // INSTRUCTIONS:
   //
   // 1) Read the value from the photoresistor.
   // sensorValue = ... to be filled by you;
-  
+
   // 2) Map the sensor value to our scale from 0 to 255. Simple math!
-  // 3) Constrain the values to 0 to 255. If a value is less than 0 make it 0. If a value is greater than 255 make it 255. 
-  
+  // 3) Constrain the values to 0 to 255. If a value is less than 0 make it 0. If a value is greater than 255 make it 255.
+
   // sensorValue is now in between 0 and 255.
 
   if (sensorValue > 0 && sensorValue < 85){
@@ -221,11 +221,33 @@ void loop() {
     digitalWrite(greenPin, LOW);
     digitalWrite(bluePin, HIGH);
   }
-  
+
   delay(100);
 }
 ```
 
-Take a look at the `setup()` function to see how we read the photoresistor value and do the same in the `loop()` function to complete the instructions. You then need to map the values to our 0 - 255 scale and constrain the values to this range. The code that decides the color of the LED based on the new value is given to you. 
+Take a look at the `setup()` function to see how we read the photoresistor value and do the same in the `loop()` function to complete the instructions. You then need to map the values to our 0 - 255 scale and constrain the values to this range. The code that decides the color of the LED based on the new value is given to you.
 
-Now that this is done you should upload your program to the Arduino. During the calibration period make sure to expose the sensor to light (maybe use your phone's flashlight) and also cover it from light. After calibration is done play with it by shining light or covering the photoresistor and see how the LED changes color. 
+Now that this is done you should upload your program to the Arduino. During the calibration period make sure to expose the sensor to light (maybe use your phone's flashlight) and also cover it from light. After calibration is done play with it by shining light or covering the photoresistor and see how the LED changes color.
+
+#### Lab Task #2
+
+Make the calibration indicator LED blink at a rate of 250ms during the calibration period. Allow more colors to be displayed in the LED by combining the different RGB hues. Make sure you are able to display the following colors:
+
+1. Red
+2. Green
+3. Blue
+4. Yellow
+5. Magenta
+6. Cyan
+7. White
+
+In order to ease the accommodation of the extra colors make sure to modify your mapping scale. The scale should go from 0 to 700. Modify your `if` statements to reflect the changes. The following rules apply:
+
+* **Red:** 0 < x < 100
+* **Green:** 100 < x < 200
+* **Blue:** 200 < x < 300
+* **Yellow:** 300 < x < 400
+* **Magenta:** 400 < x < 500
+* **Cyan:** 500 < x < 600
+* **White:** 600 < x < 700
