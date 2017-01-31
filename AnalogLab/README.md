@@ -193,3 +193,37 @@ In this case we have chosen our scale to be from 0 to 255 (there is a reason why
 * **Red:** 0 < x < 85
 * **Green:** 85 < x < 170
 * **Blue:** 170 < x < 255
+
+Let's focus on the `loop()` function that will make what we talked above possible. 
+
+```c++
+void loop() {
+  // INSTRUCTIONS: 
+  //
+  // 1) Read the value from the photoresistor.
+  // sensorValue = ... to be filled by you;
+  
+  // 2) Map the sensor value to our scale from 0 to 255. Simple math!
+  // 3) Constrain the values to 0 to 255. If a value is less than 0 make it 0. If a value is greater than 255 make it 255. 
+  
+  // Once you've filled in this code values will now be between 0 and 255
+
+  if (sensorValue > 0 && sensorValue < 85){
+    digitalWrite(redPin, HIGH);
+    digitalWrite(greenPin, LOW);
+    digitalWrite(bluePin, LOW);
+  } else if (sensorValue > 85 && sensorValue < 170){
+    digitalWrite(redPin, LOW);
+    digitalWrite(greenPin, HIGH);
+    digitalWrite(bluePin, LOW);
+  } else {
+    digitalWrite(redPin, LOW);
+    digitalWrite(greenPin, LOW);
+    digitalWrite(bluePin, HIGH);
+  }
+  
+  delay(100);
+}
+```
+
+Take a look at the `setup()` function to see how we read the photoresistor value and do the same in the `loop()` function to complete the instructions. You then need to map the values to our 0 - 255 scale and constrain the values to this range. The code that decides the color of the LED based on the new value is given to you. 
