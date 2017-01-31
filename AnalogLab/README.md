@@ -227,3 +227,5 @@ void loop() {
 ```
 
 Take a look at the `setup()` function to see how we read the photoresistor value and do the same in the `loop()` function to complete the instructions. You then need to map the values to our 0 - 255 scale and constrain the values to this range. The code that decides the color of the LED based on the new value is given to you. 
+
+Now that this is done you should upload your program to the Arduino. During the calibration period make sure to expose the sensor to light (maybe use your phone's flashlight) and also cover it from light. After calibration is done play with it by shining light or covering the photoresistor and see how the LED changes color. 
