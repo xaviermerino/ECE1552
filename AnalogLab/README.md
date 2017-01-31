@@ -206,7 +206,7 @@ void loop() {
   // 2) Map the sensor value to our scale from 0 to 255. Simple math!
   // 3) Constrain the values to 0 to 255. If a value is less than 0 make it 0. If a value is greater than 255 make it 255. 
   
-  // Once you've filled in this code values will now be between 0 and 255
+  // sensorValue is now in between 0 and 255.
 
   if (sensorValue > 0 && sensorValue < 85){
     digitalWrite(redPin, HIGH);
