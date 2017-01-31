@@ -251,3 +251,5 @@ In order to ease the accommodation of the extra colors make sure to modify your 
 * **Magenta:** 400 < x < 500
 * **Cyan:** 500 < x < 600
 * **White:** 600 < x < 700
+
+Once you are done with this task show it to your TA for credit.
