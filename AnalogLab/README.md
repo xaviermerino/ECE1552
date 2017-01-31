@@ -232,7 +232,7 @@ Now that this is done you should upload your program to the Arduino. During the 
 
 #### Lab Task #2
 
-Make the calibration indicator LED blink at a rate of 250ms during the calibration period. Allow more colors to be displayed in the LED by combining the different RGB hues. Make sure you are able to display the following colors:
+Make the calibration indicator LED blink at a rate of 250ms during the calibration period. Remember to use `millis()` as `delay()` blocks the execution! Allow more colors to be displayed in the LED by combining the different RGB hues. Make sure you are able to display the following colors:
 
 1. Red
 2. Green
