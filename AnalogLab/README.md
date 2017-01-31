@@ -185,3 +185,11 @@ Let's now explain why we need calibration. We mentioned before that the analog i
 <img  src="https://github.com/xaviermerino/ECE1552/blob/master/AnalogLab/adcLevels.png?raw=true"/>
 
 In the picture above we are only using making use of 300 - 900 in the ADC levels. Calibration makes sure our code is independent of those always fluctuating levels. It maps the lowest and greatest readings to a scale of our choosing. 
+
+<img  src="https://github.com/xaviermerino/ECE1552/blob/master/AnalogLab/Calibration.png?raw=true"/>
+
+In this case we have chosen our scale to be from 0 to 255. We have constrained all values to be between 0 and 255 and we have also set some simple rules to decide the color of our LED:
+
+* Red: 0 < x < 85 
+* Green: 85 < x < 170
+* Blue: 170 < x < 255
