@@ -180,16 +180,16 @@ void setup() {
 
 The variable `sensorValue` is used to store the reading that comes from the photoresitor. The variables `sensorMin` and `sensorMax` are meant to store the lowest and the greatest reading from the sensor during the calibration period. After the pins have been set for input or output respectively, we turn on the LED connected to `calibrationPin` to mark the beginning of the calibration process. The calibration process lasts five seconds as you can see from `millis() < 5000`. The `while` loop repeats the statements that it encloses until five seconds have elapsed. It is going to repeatedly obtain a value from the photoresistor and save it in `sensorValue`. If `sensorValue` is greater than `sensorMax`, then `sensorMax` is updated to store that greater value. If `sensorValue` is lower than `sensorMin` then `sensorMin` is updated to store that lower value. At the end of the calibration period `sensorMin` will have the lowest value read and `sensorMax` will have the greatest value. We mark the end of the calibration period by turning off the LED attached to `calibrationPin`.
 
-Let's now explain why we need calibration. We mentioned before that the analog inputs vary from 0 to 1023 depending on the voltage sensed at the pin. It might just happen that your sensor is not able to vary from 0 to 5V or that the input that is being fed results in a lower range. This means we get a lot of unused range as shown by the picture below. 
+Let's now explain why we need calibration. We mentioned before that the analog inputs vary from 0 to 1023 depending on the voltage sensed at the pin. It might just happen that your sensor is not able to vary from 0 to 5V or that the input that is being fed results in a lower range. This means we get a lot of unused range as shown by the picture below.
 
 <img  src="https://github.com/xaviermerino/ECE1552/blob/master/AnalogLab/adcLevels.png?raw=true"/>
 
-In the picture above we are only using making use of 300 - 900 in the ADC levels. Calibration makes sure our code is independent of those always fluctuating levels. It maps the lowest and greatest readings to a scale of our choosing. 
+In the picture above we are only using making use of 300 - 900 in the ADC levels. Calibration makes sure our code is independent of those always fluctuating levels. It maps the lowest and greatest readings to a scale of our choosing.
 
 <img  src="https://github.com/xaviermerino/ECE1552/blob/master/AnalogLab/Calibration.png?raw=true"/>
 
-In this case we have chosen our scale to be from 0 to 255. We have constrained all values to be between 0 and 255 and we have also set some simple rules to decide the color of our LED:
+In this case we have chosen our scale to be from 0 to 255 (there is a reason why we chose this scale, this will be explained next lab). We have constrained all values to be between 0 and 255 and we have also set some simple rules to decide the color of our LED:
 
-* Red: 0 < x < 85 
-* Green: 85 < x < 170
-* Blue: 170 < x < 255
+* **Red:** 0 < x < 85
+* **Green:** 85 < x < 170
+* **Blue:** 170 < x < 255
