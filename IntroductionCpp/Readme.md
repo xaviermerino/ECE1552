@@ -25,7 +25,7 @@ A program needs to go from a text file to binary instructions that processors ca
 ![compileProcess](https://github.com/xaviermerino/ECE1552/blob/master/IntroductionCpp/compile2.png?raw=true)
 
 <br>
-The preprocessor applies some modifications to the original source code and then feeds it to the compiler. The compiler is just a program that given source code will output an object file. An object file is an intermediate step in the generation of an executable. A collection of object files (and external libraries) are put together by the linker to produce an executable. Your OS will load your executable via its loader and your program will then reside in memory. 
+The **preprocessor** applies some modifications to the original source code and then feeds it to the compiler. The **compiler** is just a program that given source code will output an object file. An object file is an intermediate step in the generation of an executable. A collection of object files (and external libraries) are put together by the **linker** to produce an executable. Your OS will load your executable via its **loader** and your program will then reside in memory. 
 
 ### Hello World
 Let's start with the classical "Hello World" program. We will explain each line as we go through this lab. The source code is provided below. Try it out online [here.](cpp.sh/5dpu)
@@ -41,7 +41,9 @@ int main(){
 
 The code above contains **keywords** such as `int`. You might have seen other keywords such as `double` and `while`. It also contains **identifiers**. Identifiers include variable names, function names (such as `main` in the snippet above), among others. You can also see some **literal** values such as `"Hello World"`. These are constants that are specified in the code. You can also notice the **punctuation** used in the snippet. We use `{ }` braces to delimit functions. We also use `;` at the end of some statements. In case you were wondering, the `<<` is an **operator**. Other operators such as `+`, `-`, `%`, `&&`, and `||` are probably familiar to you.
 
+We are now going to go over each line in the snippet above. The first line starts with a `#` symbol. These lines are **preprocessor directives**. The `#include` tells the preprocessor to get the contents of the `iostream` file. Including `iostream` allows us to use the console for input and output. We then have `int main() { ... }`. This is the entry point to our program. All C/C++ programs need a `main` function that signals where the program begins. The curly braces encompass the instructions that are part of this function. In other words, what goes inside the braces gets executed when the program starts running. 
 
+We now face `std::cout << "Hello World!\n"`. The sequence of characters in between the quotation marks is called a **string**. We print to the console using `cout << "Hello World!\n"`. Here we are using the `<<` operator. For now, think of it as if `"Hello World!\n"` is flowing into the **c**onsole's **out**put. 
 
 
 
