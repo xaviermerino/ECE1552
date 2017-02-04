@@ -90,7 +90,7 @@ sum = 2 + 2;
 
 In the code above we are assigning the result of `2 + 2` to the variable `sum`. Now, every time you use `sum` in your code you are using the result of `2 + 2` which is `4`.
 
-Let's see a working example.
+Let's see a working example. Try it out online [here.](cpp.sh/3fuwz)
 
 ```c++
 #include <iostream>
