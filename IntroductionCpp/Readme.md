@@ -14,7 +14,7 @@ In this lab you will become familiar with C++. This is intended for those who ha
 A program is just a list of instructions that a processor can execute. A processor takes each instruction from the list and executes it. Processors execute instructions like "store 1 in memory location 0x1234". You can see below a list of instructions that go through a processor to be executed.
 
 <br>
-<img  src="https://github.com/xaviermerino/ECE4551-Computer-Architecture/blob/master/Extra-Readings/Pipelining-1/pipe1.png?raw=true" width="400"/>
+![processor](https://github.com/xaviermerino/ECE4551-Computer-Architecture/blob/master/Extra-Readings/Pipelining-1/pipe1.png?raw=true)
 
 <br>
 The instructions listed above are not written in C++. This is because the processor doesn't understand C++. In order for the processor to understand your C++ code we need to compile it.
