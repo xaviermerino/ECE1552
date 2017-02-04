@@ -64,5 +64,42 @@ The only difference is that we now have this line `using namespace std;`. The pr
 We finish the `main` function with a `return 0`. When a program finishes running successfully it returns a zero to tell the operating system that everything went alright. Returning other values than zero means that some error occurred. Don't worry about this yet, it will be covered when we reach functions. For now just remember that the last line in your `main` function should be `return 0`.
 
 ### Language Basics
-If you think of a sentence as a building block in the English language, then you can probably relate to C++'s statements. **Statements** are the fundamentals of code blocks and along with **expressions** they allow you to create complex programs. Expressions differ from statements because they evaluate to something. For instance `2+2` is an expression because it evaluates to 4 but `using namespace std;` is not (it is an statement!).
+If you think of a sentence as a building block in the English language, then you can probably relate to C++'s statements. **Statements** are the fundamentals of code blocks and along with **expressions** they allow you to create complex programs.
 
+Expressions differ from statements because they evaluate to something. For instance `2 + 2` is an expression because it evaluates to 4. This resultant value is of a  certain type. For instance in our `2 + 2` example, the resultant value is the integer `4` which is represented by the `int` **data type**. We can also store characters such as `'a'` or `'4'`. Notice that `4` is a number while `'4'` is a character. Characters are inside single quotes. You could also have decimal numbers such as `3.1416` and those belong to the `double` data type. There are different data types available for you in C++ and if you get bored you can even make your own!
+
+For now let's just list some common types:
+* **`int`**: Integer numbers.
+* **`char`**: Characters or small integers.
+* **`double`**: Decimal or floating-point numbers.
+
+Storing an `int` in memory requires more memory than storing a `char`. Each data type has its own **memory** needs. `char` for instance requires 1 byte of memory. The `int` data type is typically 4 bytes long on most computers. A microcontroller, however, might allocate only 2 bytes for an `int` data type.
+
+So far we have talked about storing values in memory but we haven't actually showed you how. In order to do this we are going to assign a name to a portion of memory and store a value of a specific data type in it. Creating that named portion of memory is called declaring a **variable**. Let's say that we want to store the value of our `2 + 2` expression. We would do so by first declaring a variable of `int` type.
+
+```c++
+int sum;
+```
+
+Declaring a variable is simple. Just write the data type you need to store followed by a whitespace and an **identifier** (i.e. a name). In the snippet above we declared a variable of type `int` named `sum`. We now have to set the value `2 + 2` in our variable.
+
+```c++
+int sum;
+sum = 2 + 2;
+```
+
+In the code above we are assigning the result of `2 + 2` to the variable `sum`. Now, every time you use `sum` in your code you are using the result of `2 + 2` which is `4`.
+
+Let's see a working example.
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main(){
+  int sum;
+  sum = 2 + 2;
+  cout << sum;
+  return 0;
+}
+```
