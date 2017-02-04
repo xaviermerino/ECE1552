@@ -154,12 +154,109 @@ In order to change the control flow of the program we must first test for a cert
 <br>
 ![flowchart](https://github.com/xaviermerino/ECE1552/blob/master/IntroductionCpp/flowchart.png?raw=true)
 
+<br>
 As you could see we used a `<` sign to test whether the input was less than five. That symbol is an example of a relational operator. Sometimes you want to test for a more complex condition. Let's say we want to test for a number greater than 5 and less than 10. See the flowchart below.
 
 <br>
 ![flowchart](https://github.com/xaviermerino/ECE1552/blob/master/IntroductionCpp/flowchart2.png?raw=true)
 
+<br>
 As you can see the condition has changed. It went from `number < 5` to `number > 5 && number < 10`. The `&&` (and) is a logical operator. The table below lists relational and logical operators.
 
+| Operator 	| Type       	| Description         	|
+|----------	|------------	|---------------------	|
+| <        	| Relational 	| Less than           	|
+| <=       	| Relational 	| Less or equal to    	|
+| >        	| Relational 	| Greater than        	|
+| >=       	| Relational 	| Greater or equal to 	|
+| ==       	| Relational 	| Equal to            	|
+| !=       	| Relational 	| Not equal to        	|
+| &&       	| Logical    	| And                 	|
+| &#124; &#124; | Logical	| Or                  	|
+| !        	| Logical    	| Not                 	|
+
+Evaluating a condition returns a value of `true` or `false`. These boolean values are of type `bool`. As expected, you can create a variable that holds the result of a boolean expression as shown below.
+
+```c++
+bool result;
+result = (x < 5);
+```
+
+Let's now show you an example code for the flowchart above with the condition `number > 5 && number < 10`. Try it out online [here](cpp.sh/4twob).
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main(){
+    int number;
+    cin >> number;
+
+    // Condition goes inside the if-statement.
+    if (number > 5 && number < 10){
+        // This executes if true.
+        cout << "A";
+    } else {
+        // This executes if false.
+        cout << "B";    
+    }
+}
+```
+
+The only thing new in the code above if the use of the `if` statement. In order to create a valid `if` statement you need to follow this structure.
+
+```c++
+if ( condition ) {
+  // Code here is executed if condition evaluates to true
+}
+```
+
+Sometimes (as in the flowchart above) we want to do something if the condition is not true. In this case we have the `if-else` statement.
+
+```c++
+if ( condition ) {
+  // Code here is executed if condition evaluates to true
+} else {
+  // Code here is executed if condition evaluates to false
+}
+```
 
 ### Lab Task
+
+We have three tasks to accomplish in this lab session.
+
+* **Order of Evaluation:** Write a program that computes the following values of `x` and displays the output to the screen.
+    * x1 = 7 + 3 x 6 / 2 - 1
+    * x2 = 2 % 2 + 2 x 2 - 2 / 2
+    * x3 = ( 3 × 9 × ( 3 + (9 × 3 / ( 3 ) ) ) )
+
+* **Arithmetic, Decision-Making:** Write a program that inputs three integers from the keyboard and prints the sum, average, product, smallest, and largest of these numbers. The screen dialog should appear as follows:
+
+```
+Input three different integers: 13 27 14
+Sum is 54
+Average is 18
+Product is 4914
+Smallest is 13
+Largest is 27
+```
+
+* **Simple Input / Output Statements:** Create a BMI calculator application that reads the user’s weight in pounds and height in inches (or, if you prefer, the user’s weight in kilograms and height in meters), then calculates and displays the user’s body mass index. Also, the application should display the following information from the department of health and Human Services/National Institute of Health so the user can evaluate his/her BMI. The screen dialog should appear as follow:
+
+```
+BMI Values
+Underweight: less than 18.5
+Normal:      between 18.5 and 24.9
+Overweight:  between 25 and 29.9
+Obese:       30 or greater
+Your BMI is <<output>>
+```
+
+Use the following formulas to calculate the BMI.
+<br>
+
+![bmi](http://mathurl.com/zyo8szm.png)
+
+or
+
+![bmi](http://mathurl.com/zrmjuzh.png)
