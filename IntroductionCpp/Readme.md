@@ -90,7 +90,7 @@ sum = 2 + 2;
 
 In the code above we are assigning the result of `2 + 2` to the variable `sum`. Now, every time you use `sum` in your code you are using the result of `2 + 2` which is `4`.
 
-Let's see a working example. Try it out online [here.](cpp.sh/3fuwz)
+Let's see a working example. Try it out online [here.](cpp.sh/46ov)
 
 ```c++
 #include <iostream>
@@ -99,7 +99,49 @@ using namespace std;
 int main(){
   int sum;
   sum = 2 + 2;
-  cout << sum;
+  cout << "The result of 2 + 2 is: " << sum;
+  return 0;
+}
+```
+
+### Console Input
+Programs would not be that useful if they could not take user input. In this section we use `cin` to capture user input from the console. 
+
+To print to the console we used:
+
+```c++
+int number;
+number = 4;
+cout << number;
+```
+
+To receive input we use:
+
+```c++
+int userInput;
+cin >> userInput;
+```
+
+If you noticed we are using the `>>` operator when storing input. You can think of it as moving the console input to the variable `userInput`.
+
+Let's see a working example. Try it out online [here](cpp.sh/9afn).
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main(){
+  int userInput;
+
+  // Storing user input in the variable userInput. 
+  // Input can only be a number since we are using the int data type.
+  
+  cin >> userInput;
+
+  // Printing the user input. 
+  
+  cout << "Input is: " << userInput;
+  
   return 0;
 }
 ```
