@@ -105,7 +105,7 @@ int main(){
 ```
 
 ### Console Input
-Programs would not be that useful if they could not take user input. In this section we use `cin` to capture user input from the console. 
+Programs would not be that useful if they could not take user input. In this section we use `cin` to capture user input from the console.
 
 To print to the console we used:
 
@@ -133,15 +133,33 @@ using namespace std;
 int main(){
   int userInput;
 
-  // Storing user input in the variable userInput. 
+  // Storing user input in the variable userInput.
   // Input can only be a number since we are using the int data type.
-  
+
   cin >> userInput;
 
-  // Printing the user input. 
-  
+  // Printing the user input.
+
   cout << "Input is: " << userInput;
-  
+
   return 0;
 }
 ```
+
+### Simple Flow Control
+Programs execute the statements in order. Sometimes we wish we can alter the execution based on the circumstances. Control structures allow programs to decide whether to execute or not a group of statements and affect the program's control flow. In this section we are going to cover a simple conditional construct, the `if` statement.
+
+In order to change the control flow of the program we must first test for a certain condition. For instance, if the user's input is less than 5 we might take route A, otherwise we will take route B. This is illustrated in the flowchart below. If you need help understanding the flowchart symbols visit [this site](https://www.programiz.com/article/flowchart-programming).
+
+<br>
+![flowchart](https://github.com/xaviermerino/ECE1552/blob/master/IntroductionCpp/flowchart.png?raw=true)
+
+As you could see we used a `<` sign to test whether the input was less than five. That symbol is an example of a relational operator. Sometimes you want to test for a more complex condition. Let's say we want to test for a number greater than 5 and less than 10. See the flowchart below.
+
+<br>
+![flowchart](https://github.com/xaviermerino/ECE1552/blob/master/IntroductionCpp/flowchart2.png?raw=true)
+
+As you can see the condition has changed. It went from `number < 5` to `number > 5 && number < 10`. The `&&` (and) is a logical operator. The table below lists relational and logical operators.
+
+
+### Lab Task
