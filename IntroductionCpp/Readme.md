@@ -28,7 +28,7 @@ A program needs to go from a text file to instructions that processors can use. 
 The **preprocessor** applies some modifications to the original source code and then feeds it to the compiler. The **compiler** is just a program that given source code will output an object file. An object file is an intermediate step in the generation of an executable. A collection of object files (and external libraries) are put together by the **linker** to produce an executable. Your OS will load your executable via its **loader** and your program will then reside in memory.
 
 ### "Hello World"
-Let's start with the classical "Hello World" program. We will explain each line as we go through this lab. The source code is provided below. Try it out online [here.](cpp.sh/5dpu)
+Let's start with the classical "Hello World" program. We will explain each line as we go through this lab. The source code is provided below. Try it out online [here.](http://cpp.sh/5dpu)
 
 ```c++
 #include <iostream>
@@ -45,7 +45,7 @@ We are now going to go over each line in the snippet above. The first line start
 
 We now face `std::cout << "Hello World!\n"`. The sequence of characters in between the quotation marks is called a **string**. We print to the console using `cout << "Hello World!\n"`. Here we are using the `<<` operator. For now, think of it as if `"Hello World!\n"` is flowing into the console's output. The `\n` is an escape sequence that means new line. We haven't mentioned `std::` yet. The `::` is called the **scope resolution operator**. In the snippet above it is basically telling the compiler to look for **cout** in the **std** namespace. A **namespace** is a way of organizing code into groups. The `cout`, `cin`, among other symbols are within that namespace. You need to prepend the `std::` before any use of `cout` to let the compiler know where to find it.
 
-Let's try a different version of out "Hello World" program. Try it out online [here.](cpp.sh/9voxm)
+Let's try a different version of out "Hello World" program. Try it out online [here.](http://cpp.sh/9voxm)
 
 ```c++
 #include <iostream>
@@ -90,7 +90,7 @@ sum = 2 + 2;
 
 In the code above we are assigning the result of `2 + 2` to the variable `sum`. Now, every time you use `sum` in your code you are using the result of `2 + 2` which is `4`.
 
-Let's see a working example. Try it out online [here.](cpp.sh/46ov)
+Let's see a working example. Try it out online [here.](http://cpp.sh/46ov)
 
 ```c++
 #include <iostream>
@@ -124,7 +124,7 @@ cin >> userInput;
 
 If you noticed we are using the `>>` operator when storing input. You can think of it as moving the console input to the variable `userInput`.
 
-Let's see a working example. Try it out online [here](cpp.sh/9afn).
+Let's see a working example. Try it out online [here](http://cpp.sh/9afn).
 
 ```c++
 #include <iostream>
@@ -182,7 +182,7 @@ bool result;
 result = (x < 5);
 ```
 
-Let's now show you an example code for the flowchart above with the condition `number > 5 && number < 10`. Try it out online [here](cpp.sh/4twob).
+Let's now show you an example code for the flowchart above with the condition `number > 5 && number < 10`. Try it out online [here](http://cpp.sh/4twob).
 
 ```c++
 #include <iostream>
