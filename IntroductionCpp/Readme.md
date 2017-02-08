@@ -45,7 +45,7 @@ We are now going to go over each line in the snippet above. The first line start
 
 We now face `std::cout << "Hello World!\n"`. The sequence of characters in between the quotation marks is called a **string**. We print to the console using `cout << "Hello World!\n"`. Here we are using the `<<` operator. For now, think of it as if `"Hello World!\n"` is flowing into the console's output. The `\n` is an escape sequence that means new line. We haven't mentioned `std::` yet. The `::` is called the **scope resolution operator**. In the snippet above it is basically telling the compiler to look for **cout** in the **std** namespace. A **namespace** is a way of organizing code into groups. The `cout`, `cin`, among other symbols are within that namespace. You need to prepend the `std::` before any use of `cout` to let the compiler know where to find it.
 
-Let's try a different version of out "Hello World" program. Try it out online [here.](http://cpp.sh/9voxm)
+Let's try a different version of our "Hello World" program. Try it out online [here.](http://cpp.sh/9voxm)
 
 ```c++
 #include <iostream>
