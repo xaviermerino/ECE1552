@@ -259,4 +259,4 @@ Use the following formulas to calculate the BMI.
 
 or
 
-![bmi](http://mathurl.com/zrmjuzh.png)
+![bmi](http://mathurl.com/h2nyyet.png)
