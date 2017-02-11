@@ -211,7 +211,7 @@ Because a `break` was missing at the end of `case 0` the program ran through `ca
 ### Statements: *while* and *for*
 Conditional statements allow you to execute statements based on conditions. Loop structures allow you to repeat the execution of instructions while certain condition remains true. In this section we will cover `while` and `for` loops.
 
-Let's first cover the while loop:
+Let's first cover the `while` loop:
 
 ```c++
 while( condition )
@@ -220,7 +220,12 @@ while( condition )
 }
 ```
 
-The `while` loops repeats its code block for as long as the condition remains true. In the example below, `number` is declared as an `int` variable and initialized to 1. The while loop prints the value of `number` and then increments the value by one. It repeats those instructions until `number` becomes six (or while `number` is less or equal to five). When the condition no longer holds, the program continues with its normal execution. At this point, `number` is six. Try it out [here](http://cpp.sh/4lghj).
+The `while` loops repeats its code block for as long as the condition remains true. We will be building the program in the flowchart below. 
+
+<br>
+![whileFlowchart](https://github.com/xaviermerino/ECE1552/blob/master/ControlStructures/whileFlowchart.png?raw=true)
+
+In the example below, `number` is declared as an `int` variable and initialized to 1. The while loop prints the value of `number` and then increments the value by one. It repeats those instructions until `number` becomes six (or while `number` is less or equal to five). When the condition no longer holds, the program continues with its normal execution. At this point, `number` is six. Try it out [here](http://cpp.sh/4lghj).
 
 ```c++
 #include <iostream>
@@ -242,3 +247,5 @@ int main()
   return 0;
 }
 ```
+
+A variation of the `while` loop is the `do-while` loop. Read more about it [here](https://www.tutorialspoint.com/cplusplus/cpp_do_while_loop.htm).
