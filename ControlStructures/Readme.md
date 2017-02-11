@@ -67,6 +67,7 @@ Each item is assigned an ID as follows:
 | 1       	| Pear        	|
 | 2       	| Banana      	|
 
+<br>
 The following flowchart depicts the operation of this system.
 
 <br>
@@ -110,3 +111,39 @@ int main()
 }
 
 ```
+
+A `switch` statement is another way of using conditional to control the program flow. It's syntax differs greatly from the `if` statement's. We are going to rewrite the program above using a `switch` statement. Try it out [here](http://cpp.sh/5stgk).
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int item;
+    cout << "Enter an item ID: ";
+    cin >> item;
+
+    switch(item)
+    {
+        case 0:
+            cout << "Item: Apple" << endl;
+            break;
+        case 1:
+            cout << "Item: Pear" << endl;
+            break;
+        case 2:
+            cout << "Item: Banana" << endl;
+            break;
+        default:
+            cout << "Item doesn't exist" << endl;
+            break;
+    }
+}
+
+```
+
+The `switch` statement evaluates the expression given to it. In this case the expression given to it was the integer variable `item`. If `item` matches any of the cases within the `switch` statement then it executes that section. Each `case` needs a `break` statement at the end.
+
+
+If you forget to put a `break` statement in the end then it will run through until it finds a `break`.
