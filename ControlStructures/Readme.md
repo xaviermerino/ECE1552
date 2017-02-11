@@ -8,7 +8,6 @@ In this lab you will become familiar with more complex control flow and structur
   * Understand the `switch` statement.
   * Understand how a `for` loop works.
   * Understand how a `while` loop works.
-  * Understand how a `do-while` loop works.
 
 ### Statements: *if* and *if-else*
 We previously said that programs are executed in order. We might wish to change the program flow based on the result of other operations and we do this with control statements such as the `if` family of statements. In the previous lab we introduced the `if-else` statement with the following flowchart.
@@ -112,7 +111,7 @@ int main()
 
 ```
 
-A `switch` statement is another way of using conditional to control the program flow. It's syntax differs greatly from the `if` statement's. We are going to rewrite the program above using a `switch` statement. Try it out [here](http://cpp.sh/5stgk).
+A `switch` statement is another way of using conditionals to control the program flow. It's syntax differs greatly from the `if` statement's. We are going to rewrite the program above using a `switch` statement. Try it out [here](http://cpp.sh/5stgk).
 
 ```c++
 #include <iostream>
@@ -143,7 +142,70 @@ int main()
 
 ```
 
-The `switch` statement evaluates the expression given to it. In this case the expression given to it was the integer variable `item`. If `item` matches any of the cases within the `switch` statement then it executes that section. Each `case` needs a `break` statement at the end.
+The `switch` statement evaluates the expression given to it. In this case the expression given to it was the integer variable `item`. If `item` matches any of the cases within the `switch` statement then it executes that section. Each `case` needs a `break` statement at the end. We will explain why shortly. If the expression did not evaluate to any of the cases then the default case will be executed.
+
+```c++
+switch( expression )
+{
+    case constant:
+        // Code here is executed if the expression evaluates to constant.
+        statements;
+        break;
+
+    case constant1:
+        // Code here is executed if the expression evaluates to constant1.
+        statements;
+        break;
+
+    default:
+        // Code here is executed if the expression does not match any case.
+        statements;
+        break;
+}
+
+```
+
+Let's get back to the `break` statement. When using the `switch` statement you must end each `case` with a `break` otherwise it will run through the cases until it finds a `break`. Consider the same code we wrote for the store's items. In this version of the code we forgot to include a `break` statement at the end of `case 0`. Try it out [here](http://cpp.sh/7djx).
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int item;
+    cout << "Enter an item ID: ";
+    cin >> item;
+
+    switch(item)
+    {
+        case 0:
+            cout << "Item: Apple" << endl;
+
+        case 1:
+            cout << "Item: Pear" << endl;
+            break;
+        case 2:
+            cout << "Item: Banana" << endl;
+            break;
+        default:
+            cout << "Item doesn't exist" << endl;
+            break;
+    }
+}
+
+```
+
+When executing this code and using `0` as an input your output will be:
+
+```
+Enter an item ID: 0
+Item: Apple
+Item: Pear
+```
+
+Because a `break` was missing at the end of `case 0` the program ran through `case 1` and executed that segment until it found a `break`.
+
+### Statements: *for* and *while*
 
 
-If you forget to put a `break` statement in the end then it will run through until it finds a `break`.
