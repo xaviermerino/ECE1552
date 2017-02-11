@@ -1,7 +1,7 @@
-## Lab: Control Structures
+## Lab: Flow Control Structures
 
 ### Overview
-In this lab you will become familiar with more complex control flow and structures. You will review your knowledge of conditionals and operators.
+In this lab you will become familiar with more complex control flow and structures. You will review your knowledge of conditionals and operators and learn how to use `switch` statements, `for` loops, and `while` loops.
 
 **In the process you will:**
   * Review the `if-else` statement.
@@ -144,6 +144,8 @@ int main()
 
 The `switch` statement evaluates the expression given to it. In this case the expression given to it was the integer variable `item`. If `item` matches any of the cases within the `switch` statement then it executes that section. Each `case` needs a `break` statement at the end. We will explain why shortly. If the expression did not evaluate to any of the cases then the default case will be executed.
 
+The general structure of a `switch` statement is presented below.
+
 ```c++
 switch( expression )
 {
@@ -206,6 +208,37 @@ Item: Pear
 
 Because a `break` was missing at the end of `case 0` the program ran through `case 1` and executed that segment until it found a `break`.
 
-### Statements: *for* and *while*
+### Statements: *while* and *for*
+Conditional statements allow you to execute statements based on conditions. Loop structures allow you to repeat the execution of instructions while certain condition remains true. In this section we will cover `while` and `for` loops.
 
+Let's first cover the while loop:
 
+```c++
+while( condition )
+{
+    statements;
+}
+```
+
+The `while` loops repeats its code block for as long as the condition remains true. In the example below, `number` is declared as an `int` variable and initialized to 1. The while loop prints the value of `number` and then increments the value by one. It repeats those instructions until `number` becomes six (or while `number` is less or equal to five). When the condition no longer holds, the program continues with its normal execution. At this point, `number` is six. Try it out [here](http://cpp.sh/4lghj).
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int number = 1;
+
+  while(number <= 5)
+  {
+      cout << "Number is: " << number << endl;
+      number++;
+  }
+
+  // number is now 6 which is why the while loop stopped!
+  cout << "Outside loop!" << endl;
+  cout << "Number is: " << number << endl;
+  return 0;
+}
+```
