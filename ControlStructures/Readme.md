@@ -211,6 +211,7 @@ Because a `break` was missing at the end of `case 0` the program ran through `ca
 ### Statements: *while* and *for*
 Conditional statements allow you to execute statements based on conditions. Loop structures allow you to repeat the execution of instructions while certain condition remains true. In this section we will cover `while` and `for` loops.
 
+#### The *while* loop
 Let's first cover the `while` loop:
 
 ```c++
@@ -250,3 +251,5 @@ int main()
 ```
 
 A variation of the `while` loop is the `do-while` loop. Read more about it [here](https://www.tutorialspoint.com/cplusplus/cpp_do_while_loop.htm).
+
+#### The *for* loop
