@@ -316,6 +316,7 @@ int main()
 ```
 
 ### Lab Task
+We have three tasks to accomplish in this lab session.
 
 * Write a program to print all even numbers between 1 and 100 using a while loop. See the example output below.
 
