@@ -314,3 +314,50 @@ int main()
 }
 
 ```
+
+### Lab Task
+
+* Write a program to print all even numbers between 1 and 100 using a while loop. See the example output below.
+
+```c++
+Number: 2
+Number: 4
+Number: 6
+Number: 8
+Number: 10
+...
+...
+Number: 96
+Number: 98
+Number: 100
+```
+
+* Write a program to print all odd numbers from 100 to 1 using a for loop. See the example output below.
+
+```c++
+Number: 100
+Number: 99
+Number: 98
+Number: 97
+...
+...
+Number: 3
+Number: 2
+Number: 1
+```
+
+* Let the user input a number (in this range 2 - 100). Your program should print the multiplication table (from 1 to 9) of that number. See the example below.
+
+```c++
+Input a number from 2 to 100: 67
+Multiplication table for number 67:
+67 x 1 = 67
+67 x 2 = 134
+67 x 3 = 201
+67 x 4 = 268
+67 x 5 = 335
+67 x 6 = 402
+67 x 7 = 469
+67 x 8 = 536
+67 x 9 = 603
+```
