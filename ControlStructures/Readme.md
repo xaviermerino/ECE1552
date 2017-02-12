@@ -253,3 +253,64 @@ int main()
 A variation of the `while` loop is the `do-while` loop. Read more about it [here](https://www.tutorialspoint.com/cplusplus/cpp_do_while_loop.htm).
 
 #### The *for* loop
+The `for` loop allows you to execute a code block for a specific number of times. It works by using a counter variable that keeps track of how many iterations have elapsed. The structure of a `for` loop is:
+
+```c++
+for (initialization; condition; increment)
+{
+    statements;
+}
+```  
+
+* The **initialization** step initializes a counter variable. This is only executed once.
+* The **condition** is evaluated. If the condition holds then the code block inside the loop gets executed otherwise the statements after the loop get executed.
+* The **increment** statement gets executed after every iteration of the code block. It allows you to increment or decrement the counter variable.
+
+In the snippet below, `i` is initialized to zero. The code inside the for loop will repeat while `i < 5`. At the end of each iteration, the counter variable will be updated by `i++`.
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "i: " << i << endl;
+    }
+    return 0;
+}
+
+```
+
+It results in the following output. Try it out [here](http://cpp.sh/4w2t).
+
+```c++
+i: 0
+i: 1
+i: 2
+i: 3
+i: 4
+```
+
+Now let's transform our previous `while` loop example into a `for` loop. The output is the same but the syntax is different. Try it out [here](http://cpp.sh/24pb).
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int number;
+
+    for (number = 1; number <= 5; number++){
+        cout << "Number is: " << number << endl;    
+    }
+
+    // number is now 6 which is why the for loop stopped!
+    cout << "Outside loop!" << endl;
+    cout << "Number is: " << number << endl;
+    return 0;
+}
+
+```
