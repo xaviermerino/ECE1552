@@ -336,14 +336,14 @@ Number: 100
 * Write a program to print all odd numbers from 100 to 1 using a for loop. See the example output below.
 
 ```c++
-Number: 100
 Number: 99
-Number: 98
 Number: 97
+Number: 95
+Number: 93
 ...
 ...
+Number: 5
 Number: 3
-Number: 2
 Number: 1
 ```
 
