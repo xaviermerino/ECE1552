@@ -34,7 +34,7 @@ Good bye!
 ```
 
 ### Problem #2: More Palindromes
-Repeat problem #1, but instead of reading a five-digit integer, now you have to retrieve an input string of any size from the user. If you encounter white spaces, you need to ignore them, for example, the following are palindromes: “bob”, “a car a man a maraca”, “a nut for a jar of tuna”, etc.
+Repeat the previous problem, but instead of reading a five-digit integer, now you have to retrieve an input string of any size from the user. If you encounter white spaces, you need to ignore them, for example, the following are palindromes: “bob”, “a car a man a maraca”, “a nut for a jar of tuna”, etc.
 
 ```
 Enter a string (or -1 to quit): bob
@@ -51,22 +51,22 @@ Good bye!
 ```
 
 ### Problem #3: Checkerboard Pattern of Asterisks
-Write a program that displays the following checkerboard pattern. Your program must use only three output statements, one of each of the following forms:
+Write a program that displays the following checkerboard pattern.
+
+```
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+```
+
+Your program must use only three output statements, one of each of the following forms:
 
 ```c++
 cout << "* ";`
 cout << ' ';
 cout << endl;
-```
-
-See the sample output below:
-
-```
-* * * * * * * *
- * * * * * * * *
-* * * * * * * *
- * * * * * * * *
-* * * * * * * *
- * * * * * * * *
-* * * * * * * *
 ```
