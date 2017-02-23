@@ -31,15 +31,18 @@ Making template roster for 4 student(s).
 
 See the number representation below.
 
+<br>
 ![numbers](https://github.com/xaviermerino/ECE1552/blob/master/Practice/numbers.png?raw=true)
 
+<br>
 Your goal is to consider the binary representation of these numbers and output who the winner is.
 
 Imagine that we use variables `row0`, `row1`, and `row2` to store the numbers `5`, `3`, and `0` respectively. This corresponds to the first case below.
 
+<br>
 ![ttt](https://github.com/xaviermerino/ECE1552/blob/master/Practice/tictactoe.png?raw=true)
 
-</br>
+<br>
 For that scenario your program should output:
 
 ```
