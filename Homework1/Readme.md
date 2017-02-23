@@ -48,7 +48,7 @@ An excerpt of the `main.cpp` file is presented below. You must not modify any ot
 
 Additionally, the grader will provide **automatic input** to your `cin` calls. This is, your program will be tested against the sample input and it should generate the sample output provided above.
 
-```c++
+```
 int main(int argc, const char * argv[]) {
     Catch::Session session;
     int returnCode = session.applyCommandLine( argc, argv );
@@ -99,7 +99,7 @@ This is provided for you to get feedback on your code. You can attempt to fix it
 #### Submission
 You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file.
 
-### Problem #2: More Palindromes
+### Homework #1-B: More Palindromes
 Repeat the previous problem, but instead of reading a five-digit integer, now you have to retrieve an input string of any size from the user. If you encounter white spaces, you need to ignore them, for example, the following are palindromes: “bob”, “a car a man a maraca”, “a nut for a jar of tuna”, etc.
 
 ```
@@ -116,8 +116,8 @@ Enter a string (or -1 to quit): -1
 Good bye!
 ```
 
-### Problem #3: Checkerboard Pattern of Asterisks
-Write a program that displays the following checkerboard pattern.
+### Homework #1-C: Pattern of Asterisks
+Write a program that displays the following pattern.
 
 ```
 *-*-*-*-*-*-*-*
@@ -129,7 +129,7 @@ Write a program that displays the following checkerboard pattern.
 *-*-*-*-*-*-*-*
 ```
 
-Your program must use only three output statements, one of each of the following forms:
+Your program must use only four output statements, one of each of the following forms:
 
 ```c++
 cout << "* ";`
@@ -138,3 +138,30 @@ cout << "-";
 cout << endl;
 
 ```
+
+#### Getting Started
+1. Download the starter file set. It will contain the following files:
+    * `main.cpp`
+    * `catch.hpp`
+2. Use your favorite IDE or editor to modify your files. Include the given files in a project or compile them using your compiler of choice.
+3. If you try running the program it will tell you that it has **failed all the tests**.
+4. Your goal is to make the program **pass all the tests** by completing the assignment. Your code should be placed in between the `startRecording()` and `stopRecording()` calls.
+
+When compiling the program for the first time you should get the following message:
+
+```
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+```
+
+Once you have completed the assignment your goal is to pass all the tests and obtain this output:
+
+```
+All tests passed (1 assertion in 1 test case)
+```
+
+This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
+
+#### Submission
+You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file.
