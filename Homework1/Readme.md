@@ -1,5 +1,16 @@
 ## Homework #1: Control Structures
 
+- [Overview](#overview)
+- [Homework #1-A: Palindromes](#homework-1-a-palindromes)
+  - [Getting Started](#getting-started)
+  - [Submission](#submission)
+- [Homework #1-B: More Palindromes](#homework-1-b-more-palindromes)
+  - [Getting Started](#getting-started-1)
+  - [Submission](#submission-1)
+- [Homework #1-C: Pattern of Asterisks](#homework-1-c-pattern-of-asterisks)
+  - [Getting Started](#getting-started-2)
+  - [Submission](#submission-2)
+
 ### Overview
 In this homework, you will apply the concepts of control structures – sequence, selection and repetition. You will practice the use of `if` statements to write programs that change its flow according to simple conditions. You will also make use of `for` and `while` loops to repeat code blocks while a condition holds. You will interact with the user via the console with the `cout` and `cin` statements.
 
@@ -48,7 +59,7 @@ An excerpt of the `main.cpp` file is presented below. You must not modify any ot
 
 Additionally, the grader will provide **automatic input** to your `cin` calls. This is, your program will be tested against the sample input and it should generate the sample output provided above.
 
-```c++
+```
 int main(int argc, const char * argv[]) {
     Catch::Session session;
     int returnCode = session.applyCommandLine( argc, argv );
@@ -191,4 +202,4 @@ All tests passed (1 assertion in 1 test case)
 This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
 
 #### Submission
-You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #1-C. 
+You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #1-C.
