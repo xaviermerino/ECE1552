@@ -59,7 +59,7 @@ An excerpt of the `main.cpp` file is presented below. You must not modify any ot
 
 Additionally, the grader will provide **automatic input** to your `cin` calls. This is, your program will be tested against the sample input and it should generate the sample output provided above.
 
-```
+```c++
 int main(int argc, const char * argv[]) {
     Catch::Session session;
     int returnCode = session.applyCommandLine( argc, argv );
