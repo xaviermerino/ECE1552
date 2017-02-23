@@ -32,9 +32,18 @@ Enter a five-digit integer (or -1 to quit): -1
 Good bye!
 ```
 
-The automated software grader requires us to follow some conventions to process your code. For this reason, you are given a template where you can fill in your code. You will be able to see what your errors are and what the grader expected versus what your code generated. This will help you correct your code and submit it once it is ready. Ideally, every homework submission should be correct and pass all tests. This will give you a rough estimate of your grade every time you run your program. Programs that pass all tests will receive the full marks.
+#### Getting Started
+1. Download the starter file set. It will contain the following files:
+    * main.cpp
+    * catch.hpp
+2. Use your favorite IDE or editor to modify your files. Include the given files in a project.
+3. If you try running the program it will tell you that it has failed all the tests.
+4. Your goal is to make the program pass all the tests by completing the assignment. Your code should be placed in between the `startRecording()` and `stopRecording()` calls.
 
-Download the following template to start your code. Your code must be placed within the `startRecording()` and `stopRecording()` calls (see the provided main function below). You must not modify any other statements in the provided file for the grader to work as expected.
+We perform unit testing using the **Catch** framework. Catch is a **header-only** framework which means you just need to drop the header file containing the framework into your project. This is the reason behind the `catch.hpp` file. Catch is at the heart of our automated software grader. For this reason, you are given a template where you can fill in your code. You will be able to see what your errors are and what
+the grader expected versus what your code generated. This will help you correct your code and submit it once it is ready. Ideally, every homework submission should be correct and pass all tests. This will give you a rough estimate of your grade every time you run your program. Programs that pass all tests will receive full marks.
+
+An excerpt of the `main.cpp` file is presented below. You must not modify any other statements in the provided file for the grader to work as expected. You must only place your code in between the `startRecording()` and `stopRecording()` calls. Additionally, the grader will provide automatic input to your `cin` calls. This is, your program will be tested against the sample input and it should generate the sample output provided above.
 
 ```c++
 int main(int argc, const char * argv[]) {
@@ -68,8 +77,6 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
-Additionally, the grader will provide automatic input to your `cin` calls. This is, your program will be tested against the sample input and it should generate the sample output provided above.
-
 When compiling the program for the first time you should get the following message:
 
 ```
@@ -79,13 +86,14 @@ assertions: 1 | 1 failed
 
 ```
 
-In order to fix this place your code in the right spot in the provided file. If everything goes right you should get the following message:
+Once you have completed the assignment your goal is to pass all the tests and obtain this output:
 
 ```
-===============================================================================
 All tests passed (1 assertion in 1 test case)
 
 ```
+
+This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
 
 ### Problem #2: More Palindromes
 Repeat the previous problem, but instead of reading a five-digit integer, now you have to retrieve an input string of any size from the user. If you encounter white spaces, you need to ignore them, for example, the following are palindromes: “bob”, “a car a man a maraca”, “a nut for a jar of tuna”, etc.
