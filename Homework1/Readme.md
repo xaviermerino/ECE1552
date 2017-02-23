@@ -34,19 +34,19 @@ Good bye!
 
 #### Getting Started
 1. Download the starter file set. It will contain the following files:
-    * main.cpp
-    * catch.hpp
+    * `main.cpp`
+    * `catch.hpp`
 2. Use your favorite IDE or editor to modify your files. Include the given files in a project or compile them using your compiler of choice.
-3. If you try running the program it will tell you that it has failed all the tests.
-4. Your goal is to make the program pass all the tests by completing the assignment. Your code should be placed in between the `startRecording()` and `stopRecording()` calls.
+3. If you try running the program it will tell you that it has **failed all the tests**.
+4. Your goal is to make the program **pass all the tests** by completing the assignment. Your code should be placed in between the `startRecording()` and `stopRecording()` calls.
 
-We perform unit testing using the **Catch** framework. Catch is a **header-only** framework which means you just need to drop the header file containing the framework into your project. This is the reason behind the `catch.hpp` file.
+We perform **unit testing** using the **Catch** framework. Catch is a **header-only** framework which means you just need to drop the header file containing the framework into your project. This is the reason behind the `catch.hpp` file.
 
-Catch is at the heart of our automated software grader. For this reason, you are given a template where you can fill in your code. You will be able to see what your errors are and what the grader expected versus what your code generated. This will help you correct your code and submit it once it is ready. Ideally, every homework submission should be correct and pass all tests. This will give you a rough estimate of your grade every time you run your program. Programs that pass all tests will receive full marks.
+Catch is at the heart of our **automated software grader**. For this reason, you are given a template where you can fill in your code. You will be able to see what your errors are and what the grader expected versus what your code generated. This will help you correct your code and submit it once it is ready. Ideally, every homework submission should be correct and pass all tests. This will give you a rough estimate of your grade every time you run your program. **Programs that pass all tests will receive full marks.**
 
 An excerpt of the `main.cpp` file is presented below. You must not modify any other statements in the provided file for the grader to work as expected. You must only place your code in between the `startRecording()` and `stopRecording()` calls.
 
-Additionally, the grader will provide automatic input to your `cin` calls. This is, your program will be tested against the sample input and it should generate the sample output provided above.
+Additionally, the grader will provide **automatic input** to your `cin` calls. This is, your program will be tested against the sample input and it should generate the sample output provided above.
 
 ```c++
 int main(int argc, const char * argv[]) {
