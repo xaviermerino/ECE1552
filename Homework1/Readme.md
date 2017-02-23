@@ -68,6 +68,24 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
+Additionally, the grader will provide automatic input to your `cin` calls. This is, your program will be tested against the sample input and it should generate the sample output provided above.
+
+When compiling the program for the first time you should get the following message:
+
+```
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+```
+
+In order to fix this place your code in the right spot in the provided file. If everything goes right you should get the following message:
+
+```
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+```
 
 ### Problem #2: More Palindromes
 Repeat the previous problem, but instead of reading a five-digit integer, now you have to retrieve an input string of any size from the user. If you encounter white spaces, you need to ignore them, for example, the following are palindromes: “bob”, “a car a man a maraca”, “a nut for a jar of tuna”, etc.
