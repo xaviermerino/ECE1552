@@ -97,20 +97,20 @@ All tests passed (1 assertion in 1 test case)
 This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
 
 #### Submission
-You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file.
+You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #1-A.
 
 ### Homework #1-B: More Palindromes
 Repeat the previous problem, but instead of reading a five-digit integer, now you have to retrieve an input string of any size from the user. If you encounter white spaces, you need to ignore them, for example, the following are palindromes: “bob”, “a car a man a maraca”, “a nut for a jar of tuna”, etc. *Hint: Use `getline` for inputs that have spaces!*
 
 ```
 Enter a string (or -1 to quit): bob
-The word “bob” is a palindrome!
+The word "bob" is a palindrome!
 
 Enter a string (or -1 to quit): car
-The word “car” is not a palindrome.
+The word "car" is not a palindrome.
 
 Enter a string (or -1 to quit): a car a man a maraca
-The statement “acaramanamaraca” is a palindrome!
+The statement "acaramanamaraca" is a palindrome!
 
 Enter a string (or -1 to quit): -1
 Good bye!
@@ -141,7 +141,7 @@ All tests passed (1 assertion in 1 test case)
 This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
 
 #### Submission
-You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file.
+You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #1-B.
 
 ### Homework #1-C: Pattern of Asterisks
 Write a program that displays the following pattern.
@@ -191,4 +191,4 @@ All tests passed (1 assertion in 1 test case)
 This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
 
 #### Submission
-You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file.
+You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #1-C. 
