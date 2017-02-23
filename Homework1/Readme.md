@@ -63,7 +63,7 @@ Write a program that displays the following pattern.
 *-*-*-*-*-*-*-*
 ```
 
-Your program must use only three output statements, one of each of the following forms:
+Your program must use only four output statements, one of each of the following forms:
 
 ```c++
 cout << "* ";`
