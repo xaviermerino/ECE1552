@@ -1,5 +1,6 @@
 ## Homework #1: Control Structures
 
+### Table of Contents
 - [Overview](#overview)
 - [Homework #1-A: Palindromes](#homework-1-a-palindromes)
   - [Getting Started](#getting-started)
