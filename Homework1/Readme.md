@@ -1,7 +1,7 @@
 ## Homework #1: Control Structures
 
 ### Overview
-In this homework, you will apply the concepts of control structures – sequence, selection and repetition. You will practice the use of `if` statements to write programs that change its flow according to simple conditions. You will also make use of `for` and `while` loops to repeat code blocks while a condition holds. You will interact with the user via the console with the `cout` and `cin` statements. 
+In this homework, you will apply the concepts of control structures – sequence, selection and repetition. You will practice the use of `if` statements to write programs that change its flow according to simple conditions. You will also make use of `for` and `while` loops to repeat code blocks while a condition holds. You will interact with the user via the console with the `cout` and `cin` statements.
 
 **In the process you will**:
 * Develop problem solving skills with C++
@@ -34,10 +34,39 @@ Good bye!
 
 The automated software grader requires us to follow some conventions to process your code. For this reason, you are given a template where you can fill in your code. You will be able to see what your errors are and what the grader expected versus what your code generated. This will help you correct your code and submit it once it is ready. Ideally, every homework submission should be correct and pass all tests. This will give you a rough estimate of your grade every time you run your program. Programs that pass all tests will receive the full marks.
 
-Download the following template to start your code.
-The provided main function is provided below.
+Download the following template to start your code. Your code must be placed within the `startRecording()` and `stopRecording()` calls (see the provided main function below). You must not modify any other statements in the provided file for the grader to work as expected.
 
-Notice that your code must be placed within the `startRecording()` and `stopRecording()` calls.
+```c++
+int main(int argc, const char * argv[]) {
+    Catch::Session session;
+    int returnCode = session.applyCommandLine( argc, argv );
+    if( returnCode != 0 )
+        return returnCode;
+
+    istringstream userInput("12321\n12345\n123\n-1");
+    injectInput(userInput);
+
+    startRecording();
+
+    /*
+     *
+     * Palindrome #1 problem goes here.
+     *
+     * All of your code should be between startRecording() and stopRecording();
+     * Do not modify anything else or your program will not be graded correctly.
+     * In order to get full credit for this assignment pass all the test cases.
+     * The framework will tell you if the test failed and why it failed.
+     *
+     * Spacing and new lines are important!
+     *
+     */
+
+
+    stopRecording();
+
+    return session.run();
+}
+```
 
 
 ### Problem #2: More Palindromes
