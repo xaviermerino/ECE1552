@@ -50,17 +50,17 @@ Enter a string (or -1 to quit): -1
 Good bye!
 ```
 
-### Problem #3: Checkerboard Pattern of Asterisks
-Write a program that displays the following checkerboard pattern.
+### Problem #3: Pattern of Asterisks
+Write a program that displays the following pattern.
 
 ```
-* * * * * * * *
- * * * * * * * *
-* * * * * * * *
- * * * * * * * *
-* * * * * * * *
- * * * * * * * *
-* * * * * * * *
+*-*-*-*-*-*-*-*
+ *-*-*-*-*-*-*-*
+*-*-*-*-*-*-*-*
+ *-*-*-*-*-*-*-*
+*-*-*-*-*-*-*-*
+ *-*-*-*-*-*-*-*
+*-*-*-*-*-*-*-*
 ```
 
 Your program must use only three output statements, one of each of the following forms:
@@ -68,5 +68,7 @@ Your program must use only three output statements, one of each of the following
 ```c++
 cout << "* ";`
 cout << ' ';
+cout << "-";
 cout << endl;
+
 ```
