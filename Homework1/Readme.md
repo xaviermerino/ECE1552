@@ -133,7 +133,7 @@ Good bye!
 ```
 
 #### Getting Started
-1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/Homework1/hwk1b-student.zip?raw=true)** the starter file set. It will contain the following files:
+1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/Homework1/hwk1b-Student.zip?raw=true)** the starter file set. It will contain the following files:
     * `main.cpp`
     * `catch.hpp`
 2. Use your favorite IDE or editor to modify your files. Include the given files in a project or compile them using your compiler of choice.
