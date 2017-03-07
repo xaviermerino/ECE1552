@@ -8,9 +8,9 @@ If you haven't played the game before, check [this site](http://www.freesimon.or
 **In the process you will:**
   * Review how to **interface** with push buttons.
   * Review how to **debounce** a push button.
-  * Discover how to use **play sounds** using a piezo buzzer.
+  * Discover how to **play sounds** using a piezo buzzer.
   * Make use of **arrays** to store game data.
-  * Make use of **control** and **repetition** structures for game play.
+  * Make use of **control** and **repetition** structures for gameplay.
   * Create and make use of **functions**.
 
 ### Introduction to RGB LEDs
