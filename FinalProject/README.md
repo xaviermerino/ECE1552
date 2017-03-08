@@ -16,7 +16,7 @@ If you haven't played the game before, check [this site](http://www.freesimon.or
 In the end, your system should look like the one presented below.
 
 </br>
-<img src="https://github.com/xaviermerino/ECE1552/blob/master/FinalProject/simonSays_bb.png?raw=true" alt="Simon" height="50%" width="50%">
+<img src="https://github.com/xaviermerino/ECE1552/blob/master/FinalProject/simonSays_bb.png?raw=true" alt="Simon" height="75%" width="75%">
 
 
 
