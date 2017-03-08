@@ -5,7 +5,7 @@ For this final project your goal is to create an imitation of the famous memory 
 
 If you haven't played the game before, check [this site](http://www.freesimon.org). (Flash player required)
 
-[simon](https://github.com/xaviermerino/ECE1552/blob/master/FinalProject/simonSays_bb.png?raw=truw)
+[simon](https://github.com/xaviermerino/ECE1552/blob/master/FinalProject/simonSays_bb.png?raw=true)
 
 **In the process you will:**
   * Review how to **interface** with push buttons.
