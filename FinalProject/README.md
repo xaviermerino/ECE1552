@@ -24,8 +24,8 @@ In the end, your system should look like the one presented below.
 * This imitation of Simon **does not run forever**. You are only required to generate ten rounds.
 * During a round the system must **illuminate a number of LEDs**. For instance, in round one the system illuminates one LED. In round two, the system illuminates two LEDs. Make sure to leave a second in between the light up of your LEDs.
 * After illuminating all LEDs for that round, the system must wait for the appropriate **amount of button presses**. For instance, round one should only accept one button press and round two should accept two button presses. If at any point the player pushed a wrong button the game is over. If the player pushed all the buttons in correct order then it's a win.
-* When the player wins (this is by pressing all the buttons correctly), the LEDs must **exhibit a chaser or sequencer behavior**. This should give the appearance of running lights. If you are unsure what sequence to implement, you can check [this link](https://www.youtube.com/embed/kLGUHvCSHC4) for some ideas.
-* Use the buzzer to **make a sound** when the player pressed an incorrect button. Turn off all the lights and do nothing.
+* When the player wins (this is by pressing all the buttons correctly), the LEDs must **exhibit a chaser or sequencer behavior**. This should give the appearance of running lights and should be repeated indefinitely. If you are unsure what sequence to implement, you can check [this link](https://www.youtube.com/embed/kLGUHvCSHC4) for some ideas.
+* Use the buzzer to **make a sound** when the player pressed an incorrect button. Turn off all the lights and wait indefinitely.
 * Whether it's a win or a lose the game will only be restarted by pressing the **reset button** on the Arduino.
 
 ### Getting Started
