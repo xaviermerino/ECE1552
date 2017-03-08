@@ -27,5 +27,6 @@ In the end, your system should look like the one presented below.
 * When the player wins (this is by pressing all the buttons correctly), the LEDs must **exhibit a chaser or sequencer behavior**. This should give the appearance of running lights and should be repeated indefinitely. If you are unsure what sequence to implement, you can check [this link](https://www.youtube.com/embed/kLGUHvCSHC4) for some ideas.
 * Use the buzzer to **make a sound** when the player pressed an incorrect button. Turn off all the lights and wait indefinitely.
 * Whether it's a win or a lose the game will only be restarted by pressing the **reset button** on the Arduino.
+* Make sure that on every game you get a **different set of rounds**. 
 
 ### Getting Started
