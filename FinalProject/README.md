@@ -5,8 +5,6 @@ For this final project your goal is to create an imitation of the famous memory 
 
 If you haven't played the game before, check [this site](http://www.freesimon.org). (Flash player required)
 
-![simon](https://github.com/xaviermerino/ECE1552/blob/master/FinalProject/simonSays_bb.png?raw=true)
-
 **In the process you will:**
   * Review how to **interface** with push buttons.
   * Review how to **debounce** a push button.
@@ -14,6 +12,13 @@ If you haven't played the game before, check [this site](http://www.freesimon.or
   * Make use of **arrays** to store game data.
   * Make use of **control** and **repetition** structures for gameplay.
   * Create and make use of **functions**.
+
+In the end, your system should look like the one presented below.
+
+</br>
+![simon](https://github.com/xaviermerino/ECE1552/blob/master/FinalProject/simonSays_bb.png?raw=true)
+
+
 
 ### Functional Requirements
 
