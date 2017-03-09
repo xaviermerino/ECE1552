@@ -30,7 +30,7 @@ In the end, your system should look like the one presented below.
 * Make sure that on every game you get a **different set of rounds**.
 
 ### Getting Started
-1. **[Download]**(https://github.com/xaviermerino/ECE1552/blob/master/FinalProject/SimonStarter.zip?raw=true) the starter file set. It will contain the following:
+1. [**Download**](https://github.com/xaviermerino/ECE1552/blob/master/FinalProject/SimonStarter.zip?raw=true) the starter file set. It will contain the following:
   * `SimonStarter.ino`
 2. Use your favorite IDE or editor to **modify** your files.
 3. Make use of the **provided variables** to complete your program. Add more if you feel you need to store additional data.
