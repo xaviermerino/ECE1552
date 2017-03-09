@@ -39,6 +39,7 @@ In the end, your system should look like the one presented below.
 6. Compile your program and **play**.
 
 ### Technical Requirements
+* The LEDs that are turned on during a round must be selected at **random**.
 * You are required to avoid *copy-paste* repetition of code at all costs. You must use **functions, control, and repetition structures** to achieve this.
 * You are required to use **arrays** to store game data.
 * You are required to use **constants** to avoid magic numbers. You should write code that can easily be extended to accommodate more LEDs.
