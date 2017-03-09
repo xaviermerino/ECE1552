@@ -27,6 +27,21 @@ In the end, your system should look like the one presented below.
 * When the player wins (this is by pressing all the buttons correctly), the LEDs must **exhibit a chaser or sequencer behavior**. This should give the appearance of running lights and should be repeated indefinitely. If you are unsure what sequence to implement, you can check [this link](https://www.youtube.com/embed/kLGUHvCSHC4) for some ideas.
 * Use the buzzer to **make a sound** when the player pressed an incorrect button. Turn off all the lights and wait indefinitely.
 * Whether it's a win or a lose the game will only be restarted by pressing the **reset button** on the Arduino.
-* Make sure that on every game you get a **different set of rounds**. 
+* Make sure that on every game you get a **different set of rounds**.
 
 ### Getting Started
+1. Download the starter file set. It will contain the following:
+  * `SimonStarter.ino`
+2. Use your favorite IDE or editor to modify your files. Make use of the provided variables to complete your program. Add more if you feel you need to store additional data.
+3. Make sure to use functions to avoid repetition of source code.
+4. Add comments!
+5. Compile your program and play.
+
+### Technical Requirements
+* You are required to avoid *copy-paste* repetition of code at all costs. You must use functions, control, and repetition structures to achieve this.
+* You are required to use arrays to store game data.
+* You are required to use constants to avoid magic numbers. You should write code that can easily be extended to accommodate more LEDs.
+
+### Submission
+* Once you are done show your game to your TA. You might be asked to reduce the number of rounds to ease testing. If your game behaves properly you will receive credit.
+* Zip your `.ino` file for submission. The .zip file must be named after your Tracks ID. This is for plagiarism detection purposes. 
