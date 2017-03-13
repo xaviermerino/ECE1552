@@ -32,6 +32,7 @@ int add(int, int);
 
 int main(){
     cout << "The sum is: " << add(1,2) << endl;
+    return 0;
 }
 
 // Function definition
