@@ -52,9 +52,11 @@ The Arduino function that allows to write an analog value to a pin is called `an
 
 The `analogWrite()` function takes two arguments. The first argument `pin` refers to the analog pin you want to write to. Pins that support this function are marked with a `~` sign. The second argument `value` refers to the duty cycle you want on the pin. **Duty cycle** refers to the value between 0 (always off) and 255 (always on).
 
+![image](https://www.arduino.cc/en/uploads/Tutorial/pwm.gif)
+
 For more information on PWM visit [this site](https://www.arduino.cc/en/Tutorial/PWM).
 
 ### Lab Task
-Refer to the push button lab to connect a push button to the Arduino. Connect an LED to an analog output pin (marked with `~`). Your task is to take input from the push button. Once the push button is pressed (make sure to debounce your input) the LED must start fading in and out repeatedly until the push button is pressed again. 
+Refer to the push button lab to connect a push button to the Arduino. Connect an LED to an analog output pin (marked with `~`). Your task is to take input from the push button. Once the push button is pressed (make sure to debounce your input) the LED must start fading in and out repeatedly until the push button is pressed again.
 
-Once you are done with this task show it to your TA for credit. 
+Once you are done with this task show it to your TA for credit.
