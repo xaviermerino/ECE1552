@@ -57,6 +57,6 @@ The `analogWrite()` function takes two arguments. The first argument `pin` refer
 For more information on PWM visit [this site](https://www.arduino.cc/en/Tutorial/PWM).
 
 ### Lab Task
-Refer to the push button lab to connect a push button to the Arduino. Connect an LED to an analog output pin (marked with `~`). Your task is to take input from the push button. Once the push button is pressed (make sure to debounce your input) the LED must start fading in and out repeatedly until the push button is pressed again.
+Refer to the push button lab to connect a push button to the Arduino. Connect an LED to an analog output pin (marked with `~`). Your task is to take input from the push button. Once the push button is pressed (make sure to debounce your input) the LED must start fading in and out repeatedly until the push button is pressed again. Make sure you use a function for debouncing and a function for fading the LED in and out.
 
 Once you are done with this task show it to your TA for credit.
