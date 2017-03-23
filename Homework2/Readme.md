@@ -50,3 +50,40 @@ Your code should create an alias named buffer for the type `unsigned long long` 
 </br>
 
 [![asciicast](https://asciinema.org/a/01mvrozde7j3ymcxpwthz9re1.png)](https://asciinema.org/a/01mvrozde7j3ymcxpwthz9re1)
+
+#### Getting Started
+1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/Homework1/hwk1b-Student.zip?raw=true)** the starter file set. It will contain the following files:
+    * `main.cpp`
+    * `catch.hpp`
+2. Use your favorite IDE or editor to modify your files. Include the given files in a project or compile them using your compiler of choice.
+3. If you try running the program it will tell you that it has **failed all the tests**.
+4. Your goal is to make the program **pass all the tests** by completing the assignment. Your code should be placed inside the `studentCode()` function, in between the `startRecording()` and `stopRecording()` calls.
+
+```c++
+void studentCode(){
+    injectInput(userInput);
+    startRecording();
+
+    // Student code goes here.
+
+    stopRecording();
+}
+```
+When compiling the program for the first time you should get the following message:
+
+```
+===============================================================================
+test cases: 6 | 6 failed
+assertions: 6 | 6 failed
+```
+
+Once you have completed the assignment your goal is to pass all the tests and obtain this output:
+
+```
+All tests passed (6 assertions in 6 test cases)
+```
+
+This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
+
+#### Submission
+You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #2.
