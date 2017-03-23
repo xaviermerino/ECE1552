@@ -46,4 +46,7 @@ Your code should create an alias named buffer for the type `unsigned long long` 
 
 **You can only use the assignment operator and bitwise operators to enter and retrieve data into/out of the buffer.**
 
+**See the video below for more information:**
+</br>
+
 [![asciicast](https://asciinema.org/a/01mvrozde7j3ymcxpwthz9re1.png)](https://asciinema.org/a/01mvrozde7j3ymcxpwthz9re1)
