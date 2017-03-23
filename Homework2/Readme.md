@@ -46,13 +46,4 @@ Your code should create an alias named buffer for the type `unsigned long long` 
 
 **You can only use the assignment operator and bitwise operators to enter and retrieve data into/out of the buffer.**
 
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
-</head>
-<body>
-  <asciinema-player src="/asciicast-108562.json" cols="80" rows="24"></asciinema-player>
-  ...
-  <script src="/asciinema-player.js"></script>
-</body>
-</html>
+<script type="text/javascript" src="https://asciinema.org/a/01mvrozde7j3ymcxpwthz9re1.js" id="asciicast-01mvrozde7j3ymcxpwthz9re1" async></script>
