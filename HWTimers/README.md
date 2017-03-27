@@ -1,13 +1,12 @@
-## Lab #6: Hardware Counters and Timers
+## Lab #8: Hardware Counters and Timers
 
 ### Overview
-The overall goal of this assignment is to become familiar with the basic use and configuration of timers. You will learn how to configure and access the timer registers to create a simple delay function similar to the `delay()` provided by the Arduino libraries. Throughout this procedure you will apply C++ pointers to access the ATMega328P registers and you will implement your own `pinMode()` and `digitalWrite()` functions.
+The overall goal of this assignment is to become familiar with the basic use and configuration of timers. You will learn how to configure and access the timer registers to create a simple delay function similar to the `delay()` provided by the Arduino libraries.
 
 In the end you will toggle an LED from on to off every second using the functions that you built.
 
 **In this lab you will:**
   * Become familiar with the **Timer/Counter0** registers.
-  * Use **pointers** to access registers.
   * Recreate **functions** provided by the Arduino library.
 
 ### Introduction to Timers
@@ -30,6 +29,7 @@ Now consider an application developed for a 4 MHz system that needs to blink an 
 <br>
 
 ![calc2](http://mathurl.com/jjgfdav.png)
+
 
 ![calc3](http://mathurl.com/jy7etc9.png)
 
@@ -146,16 +146,15 @@ The `TOV0` bit is set when an overflow occurs in **Timer0**. `TOV0` is cleared b
 <br>
 
 ### Getting Started
-1. **[Download](https://github.com/xaviermerino/ECE2551-SoftHardDesign/blob/master/Lab-HWTimers/starter.zip?raw=true)** the starter file. It will contain the following file:
+1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/HWTimers/starter.zip?raw=true)** the starter file. It will contain the following file:
   * `starter.ino`
 
 2. The provided file is a template file that you can use to fill in your code.
 3. Fill in the function definitions for each of the classes' methods. You can implement your own, these are just there for reference.
 
 ### Functional Requirements
-You are required to **recreate** three of the Arduino functions.
+You are required to **recreate** one of the Arduino functions.
 * You must be able to set an arbitrary delay (in milliseconds) using your own function, mimicking the behavior of `delay()`.  
-* You must be able to replicate the functionality of `pinMode()` and `digitalWrite()`.
 * You must be able to turn on and off an LED attached to pin 13. Each second you must toggle the state of the LED.
 
 ### Technical Requirements
