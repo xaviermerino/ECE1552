@@ -14,6 +14,7 @@ In this lab you will become familiar with C++. This is intended for those who ha
 A program is just a list of instructions that a processor can execute. A processor takes each instruction from the list and executes it. Processors execute instructions like "store 1 in memory location 0x1234". You can see below a list of instructions that go through a processor to be executed.
 
 <br>
+
 ![processor](https://github.com/xaviermerino/ECE4551-Computer-Architecture/blob/master/Extra-Readings/Pipelining-1/pipe1.png?raw=true)
 
 <br>
@@ -22,9 +23,11 @@ The instructions listed above are not written in C++. This is because the proces
 A program needs to go from a text file to instructions that processors can use. The image below illustrates the C++ compilation process.
 
 <br>
+
 ![compileProcess](https://github.com/xaviermerino/ECE1552/blob/master/IntroductionCpp/compile2.png?raw=true)
 
 <br>
+
 The **preprocessor** applies some modifications to the original source code and then feeds it to the compiler. The **compiler** is just a program that given source code will output an object file. An object file is an intermediate step in the generation of an executable. A collection of object files (and external libraries) are put together by the **linker** to produce an executable. Your OS will load your executable via its **loader** and your program will then reside in memory.
 
 ### "Hello World"
@@ -152,15 +155,19 @@ Programs execute the statements in order. Sometimes we wish we can alter the exe
 In order to change the control flow of the program we must first test for a certain condition. For instance, if the user's input is less than 5 we might take route A, otherwise we will take route B. This is illustrated in the flowchart below. If you need help understanding the flowchart symbols visit [this site](https://www.programiz.com/article/flowchart-programming).
 
 <br>
+
 ![flowchart](https://github.com/xaviermerino/ECE1552/blob/master/IntroductionCpp/flowchart.png?raw=true)
 
 <br>
+
 As you could see we used a `<` sign to test whether the input was less than five. That symbol is an example of a relational operator. Sometimes you want to test for a more complex condition. Let's say we want to test for a number greater than 5 and less than 10. See the flowchart below.
 
 <br>
+
 ![flowchart](https://github.com/xaviermerino/ECE1552/blob/master/IntroductionCpp/flowchart2.png?raw=true)
 
 <br>
+
 As you can see the condition has changed. It went from `number < 5` to `number > 5 && number < 10`. The `&&` (and) is a logical operator. The table below lists relational and logical operators.
 
 | Operator 	| Type       	| Description         	|
