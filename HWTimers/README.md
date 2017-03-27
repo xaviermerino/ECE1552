@@ -147,6 +147,7 @@ The `TOV0` bit is set when an overflow occurs in **Timer0**. `TOV0` is cleared b
 
 ### Getting Started
 1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/HWTimers/starter.zip?raw=true)** the starter file. It will contain the following file:
+  
   * `starter.ino`
 
 2. The provided file is a template file that you can use to fill in your code.
