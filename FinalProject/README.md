@@ -45,19 +45,19 @@ In the end, your system should look like the one presented below.
 * You are required to create the functions `digitalReadGeneric()`, `digitalWriteGeneric()`, and `pinModeGeneric()`. These functions replace the Arduino's `digitalRead()`, `digitalWrite()`, and `pinMode()` respectively.
 * You are required to create the functions `delayGeneric()` and `delayMicrosecondsGeneric()`. These functions replace the Arduino's `delay()` and `delayMicroseconds()` respectively.
 * Create a function of your own to handle the tone playing.
-* Use the following steps to generate the tone for the red LED:
+* Use the following steps to generate the tone for the **red** LED:
   1. Play 440 Hz for 150ms
   2. Wait for 1136us
   3. Play 440 Hz for 150ms
-* Use the following steps to generate the tone for the yellow LED:
+* Use the following steps to generate the tone for the **yellow** LED:
   1. Play 784 Hz for 150ms
   2. Wait for 638us
   3. Play 784 Hz for 150ms
-* Use the following steps to generate the tone for the blue LED:
+* Use the following steps to generate the tone for the **blue** LED:
   1. Play 587 Hz for 150ms
   2. Wait for 851us
   3. Play 587 Hz for 150ms
-* Use the following steps to generate the tone for the green LED:
+* Use the following steps to generate the tone for the **green** LED:
   1. Play 880 Hz for 150ms
   2. Wait for 568us
   3. Play 880 Hz for 150ms
@@ -67,5 +67,5 @@ In the end, your system should look like the one presented below.
   3. Play 150 Hz for 250ms
 
 ### Submission
-* Once you are done show your game to your TA. You might be asked to reduce the number of rounds to ease testing. If your game behaves properly you will receive credit.
+* Once you are done show your game to your TA. You might be asked to reduce the number of rounds to ease testing. If your game behaves properly and all the requirements are met you will receive credit.
 * Zip your `.ino` file for submission. The .zip file must be named after your Tracks ID. This is for plagiarism detection purposes.
