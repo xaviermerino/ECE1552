@@ -42,8 +42,21 @@ In the end, your system should look like the one presented below.
 * You are required to avoid *copy-paste* repetition of code at all costs. You must use **functions, control, and repetition structures** to achieve this.
 * You are required to use **arrays** to store game data.
 * You are required to use **constants** to avoid magic numbers. You should write code that can easily be extended to accommodate more LEDs.
-* You are required to create the functions `digitalReadGeneric()`, `digitalWriteGeneric()`, and `pinModeGeneric()`. These functions replace the Arduino's `digitalRead()`, `digitalWrite()`, and `pinMode()` respectively.
-* You are required to create the functions `delayGeneric()` and `delayMicrosecondsGeneric()`. These functions replace the Arduino's `delay()` and `delayMicroseconds()` respectively.
+* You are required to create the functions `digitalReadGeneric()`, `digitalWriteGeneric()`, and `pinModeGeneric()`. These functions replace the Arduino's `digitalRead()`, `digitalWrite()`, and `pinMode()` respectively. The function prototypes are provided below. 
+
+```c++
+bool digitalReadGeneric(uint8_t pin);
+void digitalWriteGeneric(uint8_t pin, bool isOn);
+void pinModeGeneric(uint8_t pin, bool isOutput);
+```
+
+* You are required to create the functions `delayGeneric()` and `delayMicrosecondsGeneric()`. These functions replace the Arduino's `delay()` and `delayMicroseconds()` respectively. The function prototypes are provided below. 
+
+```c++
+void delayGeneric(unsigned long ms);
+void delayMicrosecondsGeneric(unsigned long us);
+```
+
 * Create a function of your own to handle the tone playing.
 * Use the following steps to generate the tone for the **red** LED:
   1. Play 440 Hz for 150ms
