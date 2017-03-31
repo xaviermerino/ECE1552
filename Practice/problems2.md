@@ -45,7 +45,9 @@ Imagine that we use variables `row0`, `row1`, and `row2` to store the numbers `5
 ![ttt](https://github.com/xaviermerino/ECE1552/blob/master/Practice/tictactoe.png?raw=true)
 
 <br>
+
 For that scenario your program should output:
+
 
 ```
 The following 3x3 Tic-Tac-Toe was given:
