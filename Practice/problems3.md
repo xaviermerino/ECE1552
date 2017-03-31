@@ -30,4 +30,21 @@ Input the second number: 30
 GCD is: 6
 ```
 
+</br> 
+
 [![video](https://img.youtube.com/vi/AJn843kplDw/0.jpg)](https://www.youtube.com/embed/AJn843kplDw)
+
+* **Question #3:** Use Dijkstra's algorithm to find the **Greatest Common Divisor (GCD)** of two numbers. Use recursion to implement this behavior. The program should validate all input.
+
+</br>
+
+![Dijkstra](http://mathurl.com/mqe52td.png)
+
+</br>
+
+```
+Input the first number: 12
+Input the second number: 30
+
+GCD is: 6
+```
