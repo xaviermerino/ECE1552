@@ -30,6 +30,7 @@ Now consider an application developed for a 4 MHz system that needs to blink an 
 
 ![calc2](http://mathurl.com/jjgfdav.png)
 
+<br>
 
 ![calc3](http://mathurl.com/jy7etc9.png)
 
