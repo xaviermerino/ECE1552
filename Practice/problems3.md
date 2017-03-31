@@ -17,7 +17,4 @@ Would you like to try another number? (Yes = 1 / No = 0): 0
 
 * **Question #2:** Use Euclid's algorithm to find the Greatest Common Divisor (GCD) of two numbers. Use recursion to implement this behavior. The program should validate all input. Watch the video below to understand how the algorithm works.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AJn843kplDw" frameborder="0" allowfullscreen></iframe>
-
-
 [![video](https://www.youtube.com/embed/AJn843kplDw/0.jpg)](https://www.youtube.com/embed/AJn843kplDw)
