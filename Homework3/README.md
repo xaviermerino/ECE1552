@@ -15,7 +15,7 @@
 ### Overview
 In this homework you will make use of **arrays** and control flow structures to solve the classic game, **Towers of Hanoi**. This is a mathematical game that consists of three stacks and a number of disks. The game starts with the disks placed in the leftmost stack. The disks are placed in ascending order, this is, the smallest disk at the top. The goal of this game is to move the entire leftmost stack to the rightmost stack.
 
-![tower](https://upload.wikimedia.org/wikipedia/commons/0/07/Tower_of_Hanoi.jpeg)
+![tower](https://github.com/xaviermerino/ECE1552/blob/master/Homework3/towers.png?raw=true)
 
 **You must adhere to the following game rules:**
 * Only one disk can be moved at a time.
