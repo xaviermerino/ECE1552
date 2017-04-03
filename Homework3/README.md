@@ -1,21 +1,13 @@
 ## Homework #3: Towers of Hanoi
 
-### Table of Contents
-- [Overview](#overview)
-- [Homework #1-A: Palindromes](#homework-1-a-palindromes)
-  - [Getting Started](#getting-started)
-  - [Submission](#submission)
-- [Homework #1-B: More Palindromes](#homework-1-b-more-palindromes)
-  - [Getting Started](#getting-started-1)
-  - [Submission](#submission-1)
-- [Homework #1-C: Pattern of Asterisks](#homework-1-c-pattern-of-asterisks)
-  - [Getting Started](#getting-started-2)
-  - [Submission](#submission-2)
-
 ### Overview
 In this homework you will make use of **arrays** and control flow structures to solve the classic game, **Towers of Hanoi**. This is a mathematical game that consists of three stacks and a number of disks. The game starts with the disks placed in the leftmost stack. The disks are placed in ascending order, this is, the smallest disk at the top. The goal of this game is to move the entire leftmost stack to the rightmost stack.
 
+</br>
+
 ![tower](https://github.com/xaviermerino/ECE1552/blob/master/Homework3/towers.png?raw=true)
+
+</br>
 
 **You must adhere to the following game rules:**
 * Only one disk can be moved at a time.
@@ -24,28 +16,18 @@ In this homework you will make use of **arrays** and control flow structures to 
 
 ---
 
-### Homework #3: Towers of Hanoi
-A palindrome is a number or a text phrase that reads the same backward as forward. For example, each of the following five-digit integers is a palindrome:
-* 12321
-* 55555
-* 45554
-* 11611
+### Towers of Hanoi: Binary Representation
+This problem can be solved in a number of ways. We are going to solve it through a simple binary representation. These are the rules for the model:
+* There is one bit for each disk.
+* The most significant bit represents the largest disk.
+* The least significant bit represents the smallest disk.
+* Start reading the bits from the right. The first bit to have a value of 1 is the source disk (or the disk to be moved).
+* The second bit to have a value of 1 is the destination disk.
+* If the number of zeroes in between the first and second bit is even then move the source disk on top of the destination disk.
+* If the number of zeroes in between the first and second bit is odd then move the source disk on top of the stack not containing the destination disk.
+* If there is only one bit with the value of 1 move the disk to any stack you see fit.
 
-Write a program that reads in a five-digit integer and determines whether it’s a palindrome. The sample output is provided below. *Hint: Use the division and modulus operators to separate the number into its individual digits.*
-
-```
-Enter a five-digit integer (or -1 to quit): 12321
-The number 12321 is a palindrome!
-
-Enter a five-digit integer (or -1 to quit): 12345
-The number 12345 is not a palindrome.
-
-Enter a five-digit integer (or -1 to quit): 123
-The number 123 is not a five-digit number.
-
-Enter a five-digit integer (or -1 to quit): -1
-Good bye!
-```
+In the end, all the disks from the leftmost stack must be placed in the rightmost stack. 
 
 #### Getting Started
 1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/Homework1/hwk1a-student.zip?raw=true)** the starter file set. It will contain the following files:
