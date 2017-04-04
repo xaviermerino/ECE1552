@@ -67,11 +67,15 @@ Using the table above we solve the problem as shown below. Read from left to rig
   * D3 would be represented by `111`.
   * Since the stacks can only hold up to 10 elements, the biggest disk, D10, would be `1111111111`.
 
-
 * As you move the disks, you must **move** the corresponding element from one array to another.
 
 * In the end, the array representing the rightmost stack should have all of the elements in the right order. The arrays representing the leftmost and middle stacks should be empty.
 
+### Technical Requirements
+* Use **integer arrays** to store the elements that represent the disks.
+* You must use **bitwise operators** to obtain the necessary bit values to perform the disk moves.
+* You must perform a maximum of *(2^n) - 1* **steps** to solve the game.
+* You must solve this problem **without recursion**. 
 
 #### Getting Started
 1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/Homework1/hwk1a-student.zip?raw=true)** the starter file set. It will contain the following files:
@@ -89,38 +93,6 @@ An excerpt of the `main.cpp` file is presented below. You must not modify any ot
 
 Additionally, the grader will provide **automatic input** to your `cin` calls. This is, your program will be tested against the sample input and it should generate the sample output provided above.
 
-```c++
-int main(int argc, const char * argv[]) {
-    Catch::Session session;
-    int returnCode = session.applyCommandLine( argc, argv );
-    if( returnCode != 0 )
-        return returnCode;
-
-    istringstream userInput("12321\n12345\n123\n-1");
-    injectInput(userInput);
-
-    startRecording();
-
-    /*
-     *
-     * Palindrome #1 problem goes here.
-     *
-     * All of your code should be between startRecording() and stopRecording();
-     * Do not modify anything else or your program will not be graded correctly.
-     * In order to get full credit for this assignment pass all the test cases.
-     * The framework will tell you if the test failed and why it failed.
-     *
-     * Spacing and new lines are important!
-     *
-     */
-
-
-    stopRecording();
-
-    return session.run();
-}
-```
-
 When compiling the program for the first time you should get the following message:
 
 ```
@@ -136,104 +108,3 @@ All tests passed (1 assertion in 1 test case)
 ```
 
 This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
-
-#### Submission
-You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #1-A.
-
----
-
-### Homework #1-B: More Palindromes
-Repeat the previous problem, but instead of reading a five-digit integer, now you have to retrieve an input string of any size from the user. If you encounter white spaces, you need to ignore them, for example, the following are palindromes: “bob”, “a car a man a maraca”, “a nut for a jar of tuna”, etc. *Hint: Use `getline` for inputs that have spaces!*
-
-```
-Enter a string (or -1 to quit): bob
-The word "bob" is a palindrome!
-
-Enter a string (or -1 to quit): car
-The word "car" is not a palindrome.
-
-Enter a string (or -1 to quit): a car a man a maraca
-The statement "acaramanamaraca" is a palindrome!
-
-Enter a string (or -1 to quit): -1
-Good bye!
-```
-
-#### Getting Started
-1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/Homework1/hwk1b-Student.zip?raw=true)** the starter file set. It will contain the following files:
-    * `main.cpp`
-    * `catch.hpp`
-2. Use your favorite IDE or editor to modify your files. Include the given files in a project or compile them using your compiler of choice.
-3. If you try running the program it will tell you that it has **failed all the tests**.
-4. Your goal is to make the program **pass all the tests** by completing the assignment. Your code should be placed in between the `startRecording()` and `stopRecording()` calls.
-
-When compiling the program for the first time you should get the following message:
-
-```
-===============================================================================
-test cases: 1 | 1 failed
-assertions: 1 | 1 failed
-```
-
-Once you have completed the assignment your goal is to pass all the tests and obtain this output:
-
-```
-All tests passed (1 assertion in 1 test case)
-```
-
-This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
-
-#### Submission
-You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #1-B.
-
----
-
-### Homework #1-C: Pattern of Asterisks
-Write a program that displays the following pattern.
-
-```
-*-*-*-*-*-*-*-*
- *-*-*-*-*-*-*-*
-*-*-*-*-*-*-*-*
- *-*-*-*-*-*-*-*
-*-*-*-*-*-*-*-*
- *-*-*-*-*-*-*-*
-*-*-*-*-*-*-*-*
-```
-
-Your program must use only four output statements, one of each of the following forms:
-
-```c++
-cout << "*";`
-cout << ' ';
-cout << "-";
-cout << endl;
-
-```
-
-#### Getting Started
-1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/Homework1/hwk1c-student.zip?raw=true)** the starter file set. It will contain the following files:
-    * `main.cpp`
-    * `catch.hpp`
-2. Use your favorite IDE or editor to modify your files. Include the given files in a project or compile them using your compiler of choice.
-3. If you try running the program it will tell you that it has **failed all the tests**.
-4. Your goal is to make the program **pass all the tests** by completing the assignment. Your code should be placed in between the `startRecording()` and `stopRecording()` calls.
-
-When compiling the program for the first time you should get the following message:
-
-```
-===============================================================================
-test cases: 1 | 1 failed
-assertions: 1 | 1 failed
-```
-
-Once you have completed the assignment your goal is to pass all the tests and obtain this output:
-
-```
-All tests passed (1 assertion in 1 test case)
-```
-
-This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
-
-#### Submission
-You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #1-C.
