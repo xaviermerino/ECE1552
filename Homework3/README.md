@@ -16,16 +16,16 @@ In this homework you will make use of **arrays** and control flow structures to 
 
 ---
 
-### Towers of Hanoi: Binary Representation
+### Binary Representation
 This problem can be solved in a number of ways. We are going to solve it through a simple binary representation. These are the rules for the model:
-* There is one bit for each disk.
-* The most significant bit represents the largest disk.
-* The least significant bit represents the smallest disk.
-* Start reading the bits from the right. The first bit to have a value of 1 is the source disk (or the disk to be moved).
-* The second bit to have a value of 1 is the destination disk.
-* If the number of zeroes in between the first and second bit is even then move the source disk on top of the destination disk.
-* If the number of zeroes in between the first and second bit is odd then move the source disk on top of the stack not containing the destination disk.
-* If there is only one bit with the value of 1 move the disk to any stack you see fit.
+* There is **one bit** for each disk.
+* The **most significant bit** represents the largest disk.
+* The **least significant bit** represents the smallest disk.
+* Start reading the bits from the right. The first bit to have a value of 1 is the **source disk** (or the disk to be moved).
+* The second bit to have a value of 1 is the **destination disk**.
+* If the number of zeroes in between the first and second bit is **even** (or zero) then move the source disk on top of the destination disk.
+* If the number of zeroes in between the first and second bit is **odd** then move the source disk on top of the stack not containing the destination disk.
+* If there is only one bit with the value of 1 move the disk to **any stack** you see fit.
 
 In the end, all the disks from the leftmost stack must be placed in the rightmost stack. Let's assume we have only three disks (D3, D2, D1), then we would have something like this:
 
@@ -46,12 +46,29 @@ In the end, all the disks from the leftmost stack must be placed in the rightmos
 | 6      | 1  | 1  | 0  | Move D2 on top of D3       |
 | 7      | 1  | 1  | 1  | Move D1 on top of D2       |
 
+</br> 
+Using the table above we solve the problem as shown below. Read from left to right, top to bottom. 
 
 </br>
 
 ![tower](https://github.com/xaviermerino/ECE1552/blob/master/Homework3/solution.png?raw=true)
 
 </br>
+
+### Functional Requirements
+* Ask the user to input the number of disks he wishes to play with. The **number of disks** must be between 3 and 10. 
+
+* **Populate** the initial array with the number of disks specified. Each disk is an array element. A **disk is represented by a number of ones**. For instance:
+  * D1 in the previous example is represented by the integer `1`. 
+  * D2 would be represented by `11`. 
+  * D3 would be represented by `111`. 
+  * Since the stacks can only hold up to 10 elements, the biggest disk, D10, would be `1111111111`.
+  
+* Each stack is represented by an **array**. There are three arrays in the program representing the leftmost stack, the middle stack, and the rightmost stack. Each array can hold 10 elements. Each element represents a disk. 
+* As you move the disks, you must **move** the corresponding element from one array to another. 
+
+* In the end, the array representing the rightmost stack should have all of the elements in the right order. The arrays representing the leftmost and middle stacks should be empty. 
+
 
 #### Getting Started
 1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/Homework1/hwk1a-student.zip?raw=true)** the starter file set. It will contain the following files:
