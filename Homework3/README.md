@@ -29,6 +29,17 @@ This problem can be solved in a number of ways. We are going to solve it through
 
 In the end, all the disks from the leftmost stack must be placed in the rightmost stack. 
 
+| Step # | D3 | D2 | D1 | Meaning                    |
+|--------|----|----|----|----------------------------|
+| 1      | 0  | 0  | 1  | Move D1 to any empty stack |
+| 2      | 0  | 1  | 0  | Move D2 to any empty stack |
+| 3      | 0  | 1  | 1  | Move D1 on top of D2       |
+| 4      | 1  | 0  | 0  | Move D3 to any empty stack |
+| 5      | 1  | 0  | 1  | Move D1 not onto D3        |
+| 6      | 1  | 1  | 0  | Move D2 on top of D3       |
+| 7      | 1  | 1  | 1  | Move D1 on top of D2       |
+
+
 #### Getting Started
 1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/Homework1/hwk1a-student.zip?raw=true)** the starter file set. It will contain the following files:
     * `main.cpp`
