@@ -27,10 +27,17 @@ This problem can be solved in a number of ways. We are going to solve it through
 * If the number of zeroes in between the first and second bit is odd then move the source disk on top of the stack not containing the destination disk.
 * If there is only one bit with the value of 1 move the disk to any stack you see fit.
 
-In the end, all the disks from the leftmost stack must be placed in the rightmost stack. 
+In the end, all the disks from the leftmost stack must be placed in the rightmost stack. Let's assume we have only three disks (D3, D2, D1), then we would have something like this:
+
+</br>
+
+![tower](https://github.com/xaviermerino/ECE1552/blob/master/Homework3/exampleStart.png?raw=true)
+
+</br>
 
 | Step # | D3 | D2 | D1 | Meaning                    |
 |--------|----|----|----|----------------------------|
+| 0      | 0  | 0  | 0  | Starting point             |
 | 1      | 0  | 0  | 1  | Move D1 to any empty stack |
 | 2      | 0  | 1  | 0  | Move D2 to any empty stack |
 | 3      | 0  | 1  | 1  | Move D1 on top of D2       |
@@ -39,6 +46,12 @@ In the end, all the disks from the leftmost stack must be placed in the rightmos
 | 6      | 1  | 1  | 0  | Move D2 on top of D3       |
 | 7      | 1  | 1  | 1  | Move D1 on top of D2       |
 
+
+</br>
+
+![tower](https://github.com/xaviermerino/ECE1552/blob/master/Homework3/solution.png?raw=true)
+
+</br>
 
 #### Getting Started
 1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/Homework1/hwk1a-student.zip?raw=true)** the starter file set. It will contain the following files:
