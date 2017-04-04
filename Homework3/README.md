@@ -46,8 +46,9 @@ In the end, all the disks from the leftmost stack must be placed in the rightmos
 | 6      | 1  | 1  | 0  | Move D2 on top of D3       |
 | 7      | 1  | 1  | 1  | Move D1 on top of D2       |
 
-</br> 
-Using the table above we solve the problem as shown below. Read from left to right, top to bottom. 
+</br>
+
+Using the table above we solve the problem as shown below. Read from left to right, top to bottom.
 
 </br>
 
@@ -56,18 +57,18 @@ Using the table above we solve the problem as shown below. Read from left to rig
 </br>
 
 ### Functional Requirements
-* Ask the user to input the number of disks he wishes to play with. The **number of disks** must be between 3 and 10. 
+* Ask the user to input the number of disks he wishes to play with. The **number of disks** must be between 3 and 10.
 
 * **Populate** the initial array with the number of disks specified. Each disk is an array element. A **disk is represented by a number of ones**. For instance:
-  * D1 in the previous example is represented by the integer `1`. 
-  * D2 would be represented by `11`. 
-  * D3 would be represented by `111`. 
+  * D1 in the previous example is represented by the integer `1`.
+  * D2 would be represented by `11`.
+  * D3 would be represented by `111`.
   * Since the stacks can only hold up to 10 elements, the biggest disk, D10, would be `1111111111`.
-  
-* Each stack is represented by an **array**. There are three arrays in the program representing the leftmost stack, the middle stack, and the rightmost stack. Each array can hold 10 elements. Each element represents a disk. 
-* As you move the disks, you must **move** the corresponding element from one array to another. 
 
-* In the end, the array representing the rightmost stack should have all of the elements in the right order. The arrays representing the leftmost and middle stacks should be empty. 
+* Each stack is represented by an **array**. There are three arrays in the program representing the leftmost stack, the middle stack, and the rightmost stack. Each array can hold 10 elements. Each element represents a disk.
+* As you move the disks, you must **move** the corresponding element from one array to another.
+
+* In the end, the array representing the rightmost stack should have all of the elements in the right order. The arrays representing the leftmost and middle stacks should be empty.
 
 
 #### Getting Started
