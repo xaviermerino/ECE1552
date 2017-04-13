@@ -40,7 +40,7 @@ Printing unique numbers:
 22
 ```
 
-* **Question #2:** Populate a one-dimensional array with ten unique random numbers. Print the array to see what values were written in it. Repeatedly ask the user to type a number. If the number is in the array, remove it and shift each following element to the left. Add a zero at the end of the array.
+* **Question #2:** Populate a one-dimensional array with ten unique random numbers. Print the array to see what values were written in it. Repeatedly ask the user to type a number (until the user enters a -1). If the number is in the array, remove it and shift each following element to the left. Add a zero at the end of the array. In the end, print the modified array.
 
 ```
 Original Array:
