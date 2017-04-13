@@ -73,3 +73,31 @@ Modified Array:
 	numbers[8] = 0
 	numbers[9] = 0
 ```
+
+* **Question #3:** Populate a one-dimensional array with ten unique random numbers between 1 and 100. Print the array to see what values were written in it. Then, using [bubble sort](https://www.youtube.com/watch?v=yIQuKSwPlro), sort the numbers in ascending order. 
+
+```
+Original Array:
+	numbers[0] = 8
+	numbers[1] = 50
+	numbers[2] = 74
+	numbers[3] = 59
+	numbers[4] = 31
+	numbers[5] = 73
+	numbers[6] = 45
+	numbers[7] = 79
+	numbers[8] = 24
+	numbers[9] = 10
+
+Sorted Array:
+	numbers[0] = 8
+	numbers[1] = 10
+	numbers[2] = 24
+	numbers[3] = 31
+	numbers[4] = 45
+	numbers[5] = 50
+	numbers[6] = 59
+	numbers[7] = 73
+	numbers[8] = 74
+	numbers[9] = 79
+```
