@@ -108,3 +108,7 @@ All tests passed (4 assertion in 4 test case)
 ```
 
 This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
+
+#### Submission
+
+You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is aLastname2016 then your zip file should be called `aLastname2016.zip`. The zip file should only contain the `main.cpp` file. Submit under Homework #3.
