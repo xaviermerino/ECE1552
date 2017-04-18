@@ -78,7 +78,7 @@ Using the table above we solve the problem as shown below. Read from left to rig
 * You must solve this problem **without recursion**. 
 
 #### Getting Started
-1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/Homework1/hwk1a-student.zip?raw=true)** the starter file set. It will contain the following files:
+1. **[Download](https://github.com/xaviermerino/ECE1552/blob/master/Homework3/Starter.zip?raw=true)** the starter file set. It will contain the following files:
     * `main.cpp`
     * `catch.hpp`
 2. Use your favorite IDE or editor to modify your files. Include the given files in a project or compile them using your compiler of choice.
@@ -97,14 +97,14 @@ When compiling the program for the first time you should get the following messa
 
 ```
 ===============================================================================
-test cases: 1 | 1 failed
-assertions: 1 | 1 failed
+test cases: 4 | 4 failed
+assertions: 4 | 4 failed
 ```
 
 Once you have completed the assignment your goal is to pass all the tests and obtain this output:
 
 ```
-All tests passed (1 assertion in 1 test case)
+All tests passed (4 assertion in 4 test case)
 ```
 
 This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
