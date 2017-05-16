@@ -247,7 +247,7 @@ Enter a student's grade (0-100): 39
 Enter a curving percentage (0 - 20): 20
 Curving the student's grade by 20%
 The new grade is: 46.8
-Final letter grade: D
+Final letter grade: F
 ```
 
 * **Ascending Order:** Write a program that inputs three integers from the keyboard and prints them in ascending order.
