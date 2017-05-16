@@ -232,38 +232,55 @@ if ( condition ) {
 
 We have three tasks to accomplish in this lab session.
 
-* **Order of Evaluation:** Write a program that computes the following values of `x` and displays the output to the screen.
-    * x1 = 7 + 3 x 6 / 2 - 1
-    * x2 = 2 % 2 + 2 x 2 - 2 / 2
-    * x3 = ( 3 × 9 × ( 3 + (9 × 3 / ( 3 ) ) ) )
+* **Grade Curving:** Write a program that outputs a student's grade after computing a curve. The program will take as input a student's grade and the curve that will be added to the grade. The program will also output the letter grade obtained by the student.
 
-* **Arithmetic, Decision-Making:** Write a program that inputs three integers from the keyboard and prints the sum, average, product, smallest, and largest of these numbers. The screen dialog should appear as follows:
+See some examples below:
 
 ```
-Input three different integers: 13 27 14
-Sum is 54
-Average is 18
-Product is 4914
-Smallest is 13
-Largest is 27
+Enter a student's grade (0-100): 76
+Enter a curving percentage (0 - 20): 14
+Curving the student's grade by 14%
+The new grade is: 86.64
+Final letter grade: B
+
+Enter a student's grade (0-100): 39
+Enter a curving percentage (0 - 20): 20
+Curving the student's grade by 20%
+The new grade is: 46.8
+Final letter grade: D
 ```
 
-* **Simple Input / Output Statements:** Create a BMI calculator application that reads the user’s weight in pounds and height in inches (or, if you prefer, the user’s weight in kilograms and height in meters), then calculates and displays the user’s body mass index. Also, the application should display the following information from the department of health and Human Services/National Institute of Health so the user can evaluate his/her BMI. The screen dialog should appear as follow:
+* **Ascending Order:** Write a program that inputs three integers from the keyboard and prints them in ascending order.
+
+See some examples below:
 
 ```
-BMI Values
-Underweight: less than 18.5
-Normal:      between 18.5 and 24.9
-Overweight:  between 25 and 29.9
-Obese:       30 or greater
-Your BMI is <<output>>
+Number 1: 3
+Number 2: 5
+Number 3: 1
+Order: 1 3 5
+
+Number 1: 10
+Number 2: 2
+Number 3: 13
+Order: 2 10 13
 ```
 
-Use the following formulas to calculate the BMI.
-<br>
+* **Toll Payment:** Create a program that takes as an input an integer that represents the number of miles driven by an user. The program should output the amount that the driver owes according to the number of miles driven. Use the table below to set prices.
 
-![bmi](http://mathurl.com/zyo8szm.png)
+| Miles Driven                        | Cost   |
+|-------------------------------------|--------|
+| 0 through 100                       | $5.00  |
+| More than 100 but not more than 500 | $8.00  |
+| More than 500 but less than 1000    | $10.00 |
+| 1000 or more                        | $12.00 |
 
-or
+See some examples below:
 
-![bmi](http://mathurl.com/h2nyyet.png)
+```
+Enter the number of miles driven: 543
+You owe: $10.00
+
+Enter the number of miles driven: 1234
+You owe: $12.00
+```
