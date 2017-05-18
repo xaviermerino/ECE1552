@@ -2,13 +2,13 @@
 
 ### Table of Contents
 - [Overview](#overview)
-- [Homework #1-A: Palindromes](#homework-1-a-palindromes)
+- [Homework #2-A: Palindromes](#homework-2-a-palindromes)
   - [Getting Started](#getting-started)
   - [Submission](#submission)
-- [Homework #1-B: More Palindromes](#homework-1-b-more-palindromes)
+- [Homework #2-B: More Palindromes](#homework-2-b-more-palindromes)
   - [Getting Started](#getting-started-1)
   - [Submission](#submission-1)
-- [Homework #1-C: Pattern of Asterisks](#homework-1-c-pattern-of-asterisks)
+- [Homework #2-C: Pattern of Asterisks](#homework-2-c-pattern-of-asterisks)
   - [Getting Started](#getting-started-2)
   - [Submission](#submission-2)
 
@@ -23,7 +23,7 @@ In this homework, you will apply the concepts of control structures – sequence
 
 ---
 
-### Homework #1-A: Palindromes
+### Homework #2-A: Palindromes
 A palindrome is a number or a text phrase that reads the same backward as forward. For example, each of the following five-digit integers is a palindrome:
 * 12321
 * 55555
@@ -111,11 +111,11 @@ All tests passed (1 assertion in 1 test case)
 This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
 
 #### Submission
-You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #1-A.
+You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #2-A.
 
 ---
 
-### Homework #1-B: More Palindromes
+### Homework #2-B: More Palindromes
 Repeat the previous problem, but instead of reading a five-digit integer, now you have to retrieve an input string of any size from the user. If you encounter white spaces, you need to ignore them, for example, the following are palindromes: “bob”, “a car a man a maraca”, “a nut for a jar of tuna”, etc. *Hint: Use `getline` for inputs that have spaces!*
 
 ```
@@ -157,11 +157,11 @@ All tests passed (1 assertion in 1 test case)
 This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
 
 #### Submission
-You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #1-B.
+You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #2-B.
 
 ---
 
-### Homework #1-C: Pattern of Asterisks
+### Homework #2-C: Pattern of Asterisks
 Write a program that displays the following pattern.
 
 ```
@@ -209,4 +209,4 @@ All tests passed (1 assertion in 1 test case)
 This is provided for you to get feedback on your code. You can attempt to fix it and prepare it for submission once it passes all the tests. Once submitted, a set of similar tests will be run on your solution.
 
 #### Submission
-You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #1-C.
+You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is *aLastname2016* then your zip file should be called **aLastname2016.zip**. The zip file should only contain the `main.cpp` file. Submit under Homework #2-C.
