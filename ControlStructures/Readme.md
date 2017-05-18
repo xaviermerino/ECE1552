@@ -68,6 +68,7 @@ Each item is assigned an ID as follows:
 | 2       	| Banana      	|
 
 <br>
+
 The following flowchart depicts the operation of this system.
 
 <br>
