@@ -70,6 +70,7 @@ Each item is assigned an ID as follows:
 The following flowchart depicts the operation of this system.
 
 <br>
+
 ![flowchart](https://github.com/xaviermerino/ECE1552/blob/master/ControlStructures/switchFlowchart.png?raw=true)
 
 <br>
