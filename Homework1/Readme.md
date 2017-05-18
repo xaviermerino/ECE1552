@@ -1,4 +1,4 @@
-## Homework #1: Control Structures
+## Homework #2: Control Structures
 
 ### Table of Contents
 - [Overview](#overview)
