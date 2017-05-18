@@ -13,6 +13,7 @@ In this lab you will become familiar with more complex control flow and structur
 We previously said that programs are executed in order. We might wish to change the program flow based on the result of other operations and we do this with control statements such as the `if` family of statements. In the previous lab we introduced the `if-else` statement with the following flowchart.
 
 <br>
+
 ![flowchart](https://github.com/xaviermerino/ECE1552/blob/master/IntroductionCpp/flowchart2.png?raw=true)
 
 <br>
@@ -74,6 +75,7 @@ The following flowchart depicts the operation of this system.
 ![flowchart](https://github.com/xaviermerino/ECE1552/blob/master/ControlStructures/switchFlowchart.png?raw=true)
 
 <br>
+
 Based on your knowledge of `if-else` statements you could have written the code already. You might have written something similar to the code presented below. Try it out [here](http://cpp.sh/844li). There are several ways of writing this, check out [this](http://cpp.sh/74vs) version.
 
 ```c++
@@ -225,9 +227,11 @@ while( condition )
 The `while` loops repeats its code block for as long as the condition remains true. We will be building the program in the flowchart below.
 
 <br>
+
 ![whileFlowchart](https://github.com/xaviermerino/ECE1552/blob/master/ControlStructures/whileFlowchart.png?raw=true)
 
 <br>
+
 In the example below, `number` is declared as an `int` variable and initialized to 1. The while loop prints the value of `number` and then increments the value by one. It repeats those instructions until `number` becomes six (or while `number` is less or equal to five). When the condition no longer holds, the program continues with its normal execution. At this point, `number` is six. Try it out [here](http://cpp.sh/4lghj).
 
 ```c++
