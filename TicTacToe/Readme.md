@@ -25,6 +25,7 @@ If you wish to play the game click [this link](https://playtictactoe.org).
 Your task in this session is to write a program that takes a Tic-Tac-Toe game and determines who won. Let's assume we have the following game:
 
 </br>
+
 ![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/Game1.png?raw=true)
 
 
