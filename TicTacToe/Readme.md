@@ -160,13 +160,4 @@ Input Row #1 (Values between 0-7):
 #### Tic-Tac-Toe Example
 Your output should match the one of the example provided below.
 
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
-</head>
-<body>
-  <asciinema-player src="/asciicast-122175.json" cols="80" rows="24"></asciinema-player>
-  ...
-  <script src="/asciinema-player.js"></script>
-</body>
-</html>
+[![asciicast](https://asciinema.org/a/43h0lac8k382o5dqq6muoebhw.png)](https://asciinema.org/a/43h0lac8k382o5dqq6muoebhw)
