@@ -58,7 +58,7 @@ Each of the rows above can be easily represented with a variable that holds an i
 
 #### Problem Solving Steps
 
-1. **User Row Input:** Your program must ask the user to **input the decimal representation** of each row. Remember to validate the user's input to enforce that the values are between 0 and 7. 
+1. **User Row Input:** Your program must ask the user to **input the decimal representation** of each row. Remember to validate the user's input to enforce that the values are between 0 and 7.
 
 ```
 Input Row #1 (Values between 0-7): 5
@@ -66,10 +66,10 @@ Input Row #2 (Values between 0-7): 3
 Input Row #3 (Values between 0-7): 0
 ```
 
-2. **Display 3x3 Grid:** Your program must then **display the match representation** of the given numbers. 
+2. **Display 3x3 Grid:** Your program must then **display the match representation** of the given numbers.
 
 ```
-The following 3x3 Tic-Tac-Toe was given: 
+The following 3x3 Tic-Tac-Toe was given:
 
      C1  C2  C3
    +---+---+---+
@@ -81,14 +81,14 @@ R3 | O | O | O |
    +---+---+---+
 ```
 
-3. **Validate Match:** If the given match is not **possible** then you must ask the user to input valid values. 
+3. **Validate Match:** If the given match is not **possible** then you must ask the user to input valid values.
 
 ```
 Input Row #1 (Values between 0-7): 6
 Input Row #2 (Values between 0-7): 6
 Input Row #3 (Values between 0-7): 6
 
-The following 3x3 Tic-Tac-Toe was given: 
+The following 3x3 Tic-Tac-Toe was given:
 
      C1  C2  C3
    +---+---+---+
@@ -107,24 +107,26 @@ Input Row #1 (Values between 0-7):
 ...
 ```
 
-4. **Who won?:** If the given match is a valid Tic-Tac-Toe game then you must then **determine who won** and the mark combination that led the player to his victory. 
+4. **Who won?:** If the given match is a valid Tic-Tac-Toe game then you must then **determine who won** and the mark combination that led the player to his victory.
 
-There are eight possible combinations that will lead a player to win the game.
-* First Row Same
-* Second Row Same
-* Third Row Same
-* First Column Same
-* Second Column Same
-* Third Column Same
-* Left Diagonal Same
-* Right Diagonal Same
+There are eight possible mark combinations that will lead a player to win the game.
+* First row same
+* Second row same
+* Third row same
+* First column same
+* Second column same
+* Third column same
+* Left diagonal same
+* Right diagonal same
+
+Make sure you use bitwise operators to extract the values from each row so you can test for those eight combinations.
 
 ```
 Input Row #1 (Values between 0-7): 5
 Input Row #2 (Values between 0-7): 3
 Input Row #3 (Values between 0-7): 0
 
-The following 3x3 Tic-Tac-Toe was given: 
+The following 3x3 Tic-Tac-Toe was given:
 
      C1  C2  C3
    +---+---+---+
@@ -136,22 +138,35 @@ R3 | O | O | O |
    +---+---+---+
 
 Third Row Same
-Who won?:  O 
+Who won?:  O
 
-Would you like to play again? (Y / N): 
-``` 
+Would you like to play again? (Y / N):
+```
 
 5. **Play Again?:** In the end, you must ask the user if he wishes to **play again**. If he does then ask for his input again, otherwise end the program.
 
 ```
 ...
 Third Row Same
-Who won?:  O 
+Who won?:  O
 
 Would you like to play again? (Y / N): Y
 
-Input Row #1 (Values between 0-7): 
+Input Row #1 (Values between 0-7):
 ...
 ...
 ```
 
+#### Tic-Tac-Toe Example
+Your output should match the one of the example provided below.
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
+</head>
+<body>
+  <asciinema-player src="/asciicast-122175.json" cols="80" rows="24"></asciinema-player>
+  ...
+  <script src="/asciinema-player.js"></script>
+</body>
+</html>
