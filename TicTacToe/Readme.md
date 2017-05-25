@@ -56,11 +56,92 @@ You might have noticed that our Tic-Tac-Toe uses three bits per row to represent
 
 Each of the rows above can be easily represented with a variable that holds an integer number. An appropriate data type for this task would be `unsigned short` or `unsigned int`. A variable of type `unsigned short` can hold up to 2 bytes of information. A variable of type `unsigned int` can hold up to 4 bytes of information. Because we only need three bits per row we can use three `unsigned short` variables.
 
-Your program must ask the user to input the decimal representation of each row. Remember to validate the user's input to enforce that the values are between 0 and 7. 
+#### Problem Solving Steps
+
+1. Your program must ask the user to **input the decimal representation** of each row. Remember to validate the user's input to enforce that the values are between 0 and 7. 
 
 ```
 Input Row #1 (Values between 0-7): 5
 Input Row #2 (Values between 0-7): 3
 Input Row #3 (Values between 0-7): 0
+```
+
+2. Your program must then **display the match representation** of the given numbers. 
+
+```
+The following 3x3 Tic-Tac-Toe was given: 
+
+     C1  C2  C3
+   +---+---+---+
+R1 | X | O | X |
+   +---+---+---+
+R2 | O | X | X |
+   +---+---+---+
+R3 | O | O | O |
+   +---+---+---+
+```
+
+3. If the given match is not **possible** then you must ask the user to input valid values. 
+
+```
+Input Row #1 (Values between 0-7): 6
+Input Row #2 (Values between 0-7): 6
+Input Row #3 (Values between 0-7): 6
+
+The following 3x3 Tic-Tac-Toe was given: 
+
+     C1  C2  C3
+   +---+---+---+
+R1 | X | X | O |
+   +---+---+---+
+R2 | X | X | O |
+   +---+---+---+
+R3 | X | X | O |
+   +---+---+---+
+
+Not a valid Tic-Tac-Toe game!
+Play again.
+
+Input Row #1 (Values between 0-7):
+...
+...
+```
+
+4. If the given match is a valid Tic-Tac-Toe game then you must then **determine who won** and the mark combination that led the player to his victory. 
+
+```
+Input Row #1 (Values between 0-7): 5
+Input Row #2 (Values between 0-7): 3
+Input Row #3 (Values between 0-7): 0
+
+The following 3x3 Tic-Tac-Toe was given: 
+
+     C1  C2  C3
+   +---+---+---+
+R1 | X | O | X |
+   +---+---+---+
+R2 | O | X | X |
+   +---+---+---+
+R3 | O | O | O |
+   +---+---+---+
+
+Third Row Same
+Who won?:  O 
+
+Would you like to play again? (Y / N): 
+``` 
+
+5. In the end, you must ask the user if he wishes to **play again**. If he does then ask for his input again, otherwise end the program.
+
+```
+...
+Third Row Same
+Who won?:  O 
+
+Would you like to play again? (Y / N): Y
+
+Input Row #1 (Values between 0-7): 
+...
+...
 ```
 
