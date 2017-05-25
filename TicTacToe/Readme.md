@@ -27,7 +27,19 @@ Let's assume we have the match below. From the left grid it is clear that player
 
 </br>
 
-![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/Game1Representation.png?raw=true)
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/Game1DecimalRepresentation.png?raw=true)
 
 </br>
 
+We then assign a label to each row and column to make it easier to locate where the players' marks are.
+
+</br>
+
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/Game1Representationb.png?raw=true)
+
+</br>
+
+We have:
+* **Row 1:** The row containing the binary representation `101`.
+* **Row 2:** The row containing the binary representation `011`.
+* **Row 3:** The row containing the binary representation `000`. 
