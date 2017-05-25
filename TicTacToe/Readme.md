@@ -158,6 +158,6 @@ Input Row #1 (Values between 0-7):
 ```
 
 #### Tic-Tac-Toe Example
-Your output should match the one of the example provided below.
+Your output should match the example provided below.
 
 [![asciicast](https://asciinema.org/a/43h0lac8k382o5dqq6muoebhw.png)](https://asciinema.org/a/43h0lac8k382o5dqq6muoebhw)
