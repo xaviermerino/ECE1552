@@ -22,12 +22,12 @@ Tic-Tac-Toe is a kid's game consisting of a 3x3 grid and two players. The player
 If you wish to play the game click [this link](https://playtictactoe.org).
 
 ### Lab Task
-Your task in this session is to write a program that takes a Tic-Tac-Toe game and determines who won. Let's assume we have the following game:
+Your task in this session is to write a program that takes a Tic-Tac-Toe game and determines who won. 
+Let's assume we have the match below. From the left grid it is clear that player O won the match. The grid on the right is the match's binary representation. We are using a one to represent X's marks and a zero to represent O's marks.
 
 </br>
 
-![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/Game1.png?raw=true)
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/Game1Representation.png?raw=true)
 
-
-
+</br>
 
