@@ -58,7 +58,7 @@ Each of the rows above can be easily represented with a variable that holds an i
 
 #### Problem Solving Steps
 
-1. Your program must ask the user to **input the decimal representation** of each row. Remember to validate the user's input to enforce that the values are between 0 and 7. 
+1. **User Row Input:** Your program must ask the user to **input the decimal representation** of each row. Remember to validate the user's input to enforce that the values are between 0 and 7. 
 
 ```
 Input Row #1 (Values between 0-7): 5
@@ -66,7 +66,7 @@ Input Row #2 (Values between 0-7): 3
 Input Row #3 (Values between 0-7): 0
 ```
 
-2. Your program must then **display the match representation** of the given numbers. 
+2. **Display 3x3 Grid:** Your program must then **display the match representation** of the given numbers. 
 
 ```
 The following 3x3 Tic-Tac-Toe was given: 
@@ -81,7 +81,7 @@ R3 | O | O | O |
    +---+---+---+
 ```
 
-3. If the given match is not **possible** then you must ask the user to input valid values. 
+3. **Validate Match:** If the given match is not **possible** then you must ask the user to input valid values. 
 
 ```
 Input Row #1 (Values between 0-7): 6
@@ -107,7 +107,7 @@ Input Row #1 (Values between 0-7):
 ...
 ```
 
-4. If the given match is a valid Tic-Tac-Toe game then you must then **determine who won** and the mark combination that led the player to his victory. 
+4. **Who won?:** If the given match is a valid Tic-Tac-Toe game then you must then **determine who won** and the mark combination that led the player to his victory. 
 
 ```
 Input Row #1 (Values between 0-7): 5
@@ -131,7 +131,7 @@ Who won?:  O
 Would you like to play again? (Y / N): 
 ``` 
 
-5. In the end, you must ask the user if he wishes to **play again**. If he does then ask for his input again, otherwise end the program.
+5. **Play Again?:** In the end, you must ask the user if he wishes to **play again**. If he does then ask for his input again, otherwise end the program.
 
 ```
 ...
