@@ -43,3 +43,13 @@ We have:
 * **Row 1:** The row containing the binary representation `101`.
 * **Row 2:** The row containing the binary representation `011`.
 * **Row 3:** The row containing the binary representation `000`. 
+
+You might have noticed that our Tic-Tac-Toe uses three bits per row to represent a match. This means that each row can be represented by an integer number between 0 and 7. The picture below shows all of these numbers and their binary representation. 
+
+</br>
+
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/numbers.png?raw=true)
+
+</br>
+
+Each of the rows above can be easily represented with a variable that holds an integer number. An appropriate data type for this task would be `unsigned short` or `unsigned int`. A variable of type `unsigned short` can hold up to 2 bytes of information. A variable of type `unsigned int` can hold up to 4 bytes of information. 
