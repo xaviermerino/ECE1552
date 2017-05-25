@@ -109,6 +109,16 @@ Input Row #1 (Values between 0-7):
 
 4. **Who won?:** If the given match is a valid Tic-Tac-Toe game then you must then **determine who won** and the mark combination that led the player to his victory. 
 
+There are eight possible combinations that will lead a player to win the game.
+* First Row Same
+* Second Row Same
+* Third Row Same
+* First Column Same
+* Second Column Same
+* Third Column Same
+* Left Diagonal Same
+* Right Diagonal Same
+
 ```
 Input Row #1 (Values between 0-7): 5
 Input Row #2 (Values between 0-7): 3
