@@ -1,5 +1,6 @@
-## Practice Questions
-The following questions are not for credit. Use them as supplemental material to study for your quizzes and prepare for your future homework assignments.
+## Lab: Arrays
+
+Complete the following problems and show them to your TA for credit.
 
 * **Question #1:** Use a one-dimensional array to solve the following problem. Read in 20 numbers, each of which is between 10 and 100. As each number is read validate it and store it in the array. After reading all the values, display only the unique values that the user entered. Make sure you account for the worst case scenario in which all 20 numbers are different. Use the smallest possible array to solve this problem.
 
