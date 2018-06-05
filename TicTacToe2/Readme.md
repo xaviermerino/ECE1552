@@ -1,7 +1,7 @@
-## Tic-Tac-Toe
+## Midterm: Tic-Tac-Toe
 
 ### Overview
-In this section you will be recreating the Tic-Tac-Toe game in C++ using console input and output.
+In this exam you will be recreating the Tic-Tac-Toe game in C++ using console input and output.
 
 **In the process you will:**
   * Make use of **control** and **repetition** structures for input validation.
@@ -87,7 +87,7 @@ R3 | 7 | 8 | 9 |
 Select the square number you want to place an X on: 1
 ```
 
-3. **Computer's move:** The computer randomly selects a position in the board to place its token and performs the move. It prints the new resulting board. It also prompts the user to keep playing if the game has not ended due to a tie or a win. 
+3. **Computer's move:** The computer randomly selects a position in the board to place its token and performs the move. (Hint: use the [`rand()`](http://www.cplusplus.com/reference/cstdlib/rand/) function to generate random numbers) It prints the new resulting board. It also prompts the user to keep playing if the game has not ended due to a tie or a win. 
 
 ```
 Ok. I'll proceed. My turn.
