@@ -1,7 +1,7 @@
-## Midterm: Tic-Tac-Toe
+## Tic-Tac-Toe
 
 ### Overview
-In this exam you will be recreating the Tic-Tac-Toe game in C++ using console input and output.
+In this section you will be recreating the Tic-Tac-Toe game in C++ using console input and output.
 
 **In the process you will:**
   * Make use of **control** and **repetition** structures for input validation.
