@@ -62,7 +62,7 @@ The dividend is now zero. We must stop. The CRC-3 check value is stored in the a
 
 For your convenience, the steps have been summarized below. 
 
-![steps](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/CRC-steps.png?raw=true)
+![steps](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-steps.png?raw=true)
 
 #### Lab Task #1
 
