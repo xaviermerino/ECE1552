@@ -18,24 +18,49 @@ CRCs provide reasonable integrity when faced with common types of errors in comm
 ### CRC-3
 Our CRC variant, CRC-3, adds three bits to the message given to store the calculated `check` value. The polynomial that we will be using for our variant is `x^3 + x + 1`. This leaves us with the following: `1x^3 + 0x^2 + 1x + 1`. That means our coefficients are `1`, `0`, `1`, and `1`. 
 
-Let's start with a simple message: `11010011101100` 
+Let's start with a simple message (dividend): `11010011101100` 
 
 ![message](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/message.png?raw=true)
 
-And the bit representation of our `x^3 + x + 1` polynomial. 
+And the bit representation of our `x^3 + x + 1` polynomial (divisor). 
 
+![divisor](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/divisor.png?raw=true)
 
 We must pad this message with three zeroes in order to compute a 3-bit CRC. 
 
-![message](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/message%2Bcrc.png?raw=true)
+![append3bits](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/message%2Bcrc.png?raw=true)
 
 We then place the divisor's leftmost one (bottom row) under the dividend's leftmost one (top row) and perform a bitwise XOR. 
 
-![message](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-1.png?raw=true)
+![first](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-1.png?raw=true)
 
-The result becomes the new dividend and we place the divisor's leftmost one (bottomw row) under the dividend's leftmost one (top row) and perform a bitwise XOR. 
+The result becomes the new dividend and we place the divisor's leftmost one (bottom row) under the dividend's leftmost one (top row) and perform a bitwise XOR. 
 
-![message](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-2.png?raw=true)
+![second](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-2.png?raw=true)
+
+We keep on repeating the process.
+
+![third](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-3.png?raw=true)
+
+![fourth](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-4.png?raw=true)
+
+Notice how the divisor's leftmost one (bottom row) is lined up with the dividend's leftmost one (top row) to perform the bitwise XOR.
+
+![fifth](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-5.png?raw=true)
+
+We keep on repeating the process.
+
+![sixth](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-6.png?raw=true)
+
+![seventh](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-7.png?raw=true)
+
+![eight](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-8.png?raw=true)
+
+The dividend is now zero. We must stop. The CRC-3 check value is stored in the added bits.
+
+![ninth](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-9.png?raw=true)
+
+
 
 #### Lab Task #1
 
