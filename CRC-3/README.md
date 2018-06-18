@@ -34,7 +34,7 @@ We then place the divisor's leftmost one under the dividend's leftmost one and p
 
 ![first](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-1.png?raw=true)
 
-We keep on repeating the process.
+The result becomes the new dividend and we keep on repeating the process.
 
 ![second](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-2.png?raw=true)
 
@@ -54,7 +54,7 @@ We keep on repeating the process.
 
 ![eight](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-8.png?raw=true)
 
-The dividend is now zero. We must stop. The CRC-3 check value is stored in the added bits. In this case, our result is binary `100`.
+The result is zero. We must stop. The CRC-3 check value is stored in the added bits. In this case, our check value is binary `100`.
 
 ![ninth](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-9.png?raw=true)
 
