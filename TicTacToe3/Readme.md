@@ -48,8 +48,8 @@ We then assign a label to each row and column to make it easier to locate where 
 </br>
 
 We have:
-* **Row 1:** The row containing the binary representation `101`.
-* **Row 2:** The row containing the binary representation `011`.
+* **Row 1:** The row containing the binary representation `1??`.
+* **Row 2:** The row containing the binary representation `?11`.
 * **Row 3:** The row containing the binary representation `000`.
 
 </br>
@@ -58,7 +58,7 @@ You might have noticed that our Tic-Tac-Toe uses three bits per row to represent
 
 </br>
 
-![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/numbers.png?raw=true)
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/decimal-representation.png?raw=true)
 
 </br>
 
