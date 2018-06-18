@@ -27,13 +27,15 @@ If you wish to play the game click [this link](https://playtictactoe.org).
 Your task in this session is to write a program that allows the user to play Tic-Tac-Toe against the computer.
 You let the player decide whether he wants to start the match or let the computer start it. The player who starts the match is X. The other player is O. 
 
+We do this by asking the user via a `dialog` as shown below.
+
 ![whostarts](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/WhoGoesFirst%3F.png?raw=true)
 
-Let's assume we have the match below. From the top grid it is clear that player O won the match. The grid on the bottom is the match's binary representation. We are using a one to represent X's marks and a zero to represent O's marks. We use the ?'s to represent values that have not been assigned. 
+Let's assume we have the match below. From the top grid it is clear that player O won the match. The grid on the bottom is the match's binary representation. We are using a `1` to represent X's marks and a `0` to represent O's marks. We use the `?` symbol to represent values that have not been assigned. 
 
 </br>
 
-![game](https://raw.githubusercontent.com/xaviermerino/ECE1552/master/TicTacToe/tictactoe-pc.png)
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/match-binary-steps.png?raw=true)
 
 </br>
 
@@ -41,7 +43,7 @@ We then assign a label to each row and column to make it easier to locate where 
 
 </br>
 
-![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/Game1Representation.png?raw=true)
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/match-binary.png?raw=true)
 
 </br>
 
