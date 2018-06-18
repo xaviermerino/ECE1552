@@ -69,8 +69,8 @@ This is what you are given:
 
 ```c++
 unsigned int polynomial = 11;
-unsigned int data[3] = {2, 10, 3096};
-unsigned int crc[3] = {6, 4, 0};
+unsigned int data[3] = {23, 80, 13548};
+unsigned int crc[3] = {6, 4, 4};
 ```
 
 The variable `polynomial` is the decimal representation of `x^3 + x + 1`.
@@ -79,18 +79,106 @@ The array `crc` contains the original calculated CRC-3 for the data.
 
 Go through the `data` array and calculate the CRC-3 for each item in the array. 
 Compare your calculation with the provided one in the `crc` array. Print `[OK]` or `[FAILED]` accordingly.
-If the calculations do not match, print the calculated CRC and expected CRC.
+If the calculations do not match, print the calculated CRC and expected CRC. Print the steps required
+to get to the calculated CRC.
+
+In order to calculate the CRC-3 we are going to create a function `crc3()`. This function returns the `check` value of the CRC-3. 
+We use `printSteps` to aide in our debugging. When set to `true`, it prints the binary steps. 
+
+The following function prototype is given:
+
+```c++
+unsigned int crc3(unsigned int binary, unsigned int polynomial, bool printSteps = false);
+```
 
 Example output is shown below for reference.
 
-
 ```
-Latitude: 2	[OK]
-
-Longitude: 10	[FAILED]
+Latitude: 23	[FAILED]
 	Calculated CRC: 3
+	Expected CRC: 6
+
+10111000
+10110000
+--------
+00001000
+
+00001000
+00001011
+--------
+00000011
+
+
+Longitude: 80	[FAILED]
+	Calculated CRC: 5
 	Expected CRC: 4
 
-Elevation: 3096	[OK]
+1010000000
+1011000000
+----------
+0001000000
+
+0001000000
+0001011000
+----------
+0000011000
+
+0000011000
+0000010110
+----------
+0000001110
+
+0000001110
+0000001011
+----------
+0000000101
+
+
+Elevation: 13548	[OK]
+
+11010011101100000
+10110000000000000
+-----------------
+01100011101100000
+
+01100011101100000
+01011000000000000
+-----------------
+00111011101100000
+
+00111011101100000
+00101100000000000
+-----------------
+00010111101100000
+
+00010111101100000
+00010110000000000
+-----------------
+00000001101100000
+
+00000001101100000
+00000001011000000
+-----------------
+00000000110100000
+
+00000000110100000
+00000000101100000
+-----------------
+00000000011000000
+
+00000000011000000
+00000000010110000
+-----------------
+00000000001110000
+
+00000000001110000
+00000000001011000
+-----------------
+00000000000101000
+
+00000000000101000
+00000000000101100
+-----------------
+00000000000000100
 ```
 
