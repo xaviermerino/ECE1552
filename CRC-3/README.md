@@ -30,21 +30,19 @@ We must pad this message with three zeroes in order to compute a 3-bit CRC.
 
 ![append3bits](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/message%2Bcrc.png?raw=true)
 
-We then place the divisor's leftmost one (bottom row) under the dividend's leftmost one (top row) and perform a bitwise XOR. 
+We then place the divisor's leftmost one under the dividend's leftmost one and perform a bitwise XOR. The alignment is shown by the yellow highlight.
 
 ![first](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-1.png?raw=true)
 
-The result becomes the new dividend and we place the divisor's leftmost one (bottom row) under the dividend's leftmost one (top row) and perform a bitwise XOR. 
+We keep on repeating the process.
 
 ![second](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-2.png?raw=true)
-
-We keep on repeating the process.
 
 ![third](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-3.png?raw=true)
 
 ![fourth](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-4.png?raw=true)
 
-Notice how the divisor's leftmost one (bottom row) is lined up with the dividend's leftmost one (top row) to perform the bitwise XOR.
+Notice how the divisor's leftmost one is lined up with the dividend's leftmost one to perform the bitwise XOR.
 
 ![fifth](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-5.png?raw=true)
 
@@ -56,13 +54,11 @@ We keep on repeating the process.
 
 ![eight](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-8.png?raw=true)
 
-The dividend is now zero. We must stop. The CRC-3 check value is stored in the added bits.
+The dividend is now zero. We must stop. The CRC-3 check value is stored in the added bits. In this case, our result is binary `100`.
 
 ![ninth](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-step-9.png?raw=true)
 
-For your convenience, the steps have been summarized below. 
-
-![steps](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-steps.png?raw=true)
+For your convenience, the steps have been summarized [here.](https://github.com/xaviermerino/ECE1552/blob/master/CRC-3/crc-steps.png?raw=true)
 
 #### Lab Task #1
 
