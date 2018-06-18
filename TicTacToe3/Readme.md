@@ -41,11 +41,9 @@ Let's assume we have the match below. From the top grid it is clear that player 
 
 We then assign a label to each row and column to make it easier to locate where the players' marks are.
 
-</br>
 
 ![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/match-binary.png?raw=true)
 
-</br>
 
 We have:
 * **Row 1:** The row containing the binary representation `1??`.
