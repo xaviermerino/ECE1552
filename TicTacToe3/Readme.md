@@ -27,10 +27,6 @@ If you wish to play the game click [this link](https://playtictactoe.org).
 Your task in this session is to write a program that allows the user to play Tic-Tac-Toe against the computer.
 You let the player decide whether he wants to start the match or let the computer start it. The player who starts the match is X. The other player is O. 
 
-We do this by asking the user via a `dialog` as shown below.
-
-![whostarts](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/WhoGoesFirst%3F.png?raw=true)
-
 Let's assume we have the match below. From the top grid it is clear that player O won the match. The grid on the bottom is the match's binary representation. We are using a `1` to represent X's marks and a `0` to represent O's marks. We use the `?` symbol to represent values that have not been assigned. 
 
 </br>
