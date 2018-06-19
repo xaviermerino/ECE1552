@@ -78,13 +78,13 @@ Each of the rows above can be easily represented with a variable that holds an i
 
 ![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/RemainingMoves.png?raw=true)
 
-4. **Game ends:** If the game ends, then a dialog will appear showing who won and asking the user if he wants to play again. 
+5. **Game ends:** If the game ends, then a dialog will appear showing who won and asking the user if he wants to play again. 
 
 ![whostarts](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/Wins.png?raw=true)
 
 ### Resources & Acknowledgements
 
-You can download the application's artwork and other resources from this link. 
+You can download the application's artwork and other resources from this [link](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/resources.zip?raw=true). 
 
 The application and token icons used in this application were made by [Roundicons](https://roundicons.com) from [Flaticon.com](www.flaticon.com) 
 
