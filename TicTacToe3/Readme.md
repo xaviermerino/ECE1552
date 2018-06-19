@@ -70,46 +70,17 @@ Each of the rows above can be easily represented with a variable that holds an i
 
 ![whostarts](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/WhoGoesFirst%3F.png?raw=true)
 
-2. **User's move:** Your program must wait until the user.
+2. **User's move:** Your program must wait until the user clicks on an available spot to place their token. 
 
-```
-You start as X. I am O.
+![usermove](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/UserMove.png?raw=true)
 
-Tic-Tac-Toe Board:
+3. **Computer's move:** The computer randomly selects a position in the board to place its token and performs the move. (Hint: use the [`rand()`](http://www.cplusplus.com/reference/cstdlib/rand/) function to generate random numbers) 
 
-     C1  C2  C3
-   +---+---+---+
-R1 | 1 | 2 | 3 |
-   +---+---+---+
-R2 | 4 | 5 | 6 |
-   +---+---+---+
-R3 | 7 | 8 | 9 |
-   +---+---+---+
+![pcmove](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/PCMove.png?raw=true)
 
-Select the square number you want to place an X on: 1
-```
-
-3. **Computer's move:** The computer randomly selects a position in the board to place its token and performs the move. (Hint: use the [`rand()`](http://www.cplusplus.com/reference/cstdlib/rand/) function to generate random numbers) It prints the new resulting board. It also prompts the user to keep playing if the game has not ended due to a tie or a win. 
-
-```
-Ok. I'll proceed. My turn.
-
-Tic-Tac-Toe Board:
-
-     C1  C2  C3
-   +---+---+---+
-R1 | X | 1 | 2 |
-   +---+---+---+
-R2 | 3 | 4 | 5 |
-   +---+---+---+
-R3 | 6 | 7 | O |
-   +---+---+---+
-
-Select the square number you want to place an X on: 
-```
 4. **Game goes on:** Game keeps repeating until there is a tie or a win.
 
-![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/TicTacToe.png?raw=true)
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/TicTacToeRemainingSteps.png?raw=true)
 
 4. **Game ends:** If the game ends because a player wins, then a dialog will appear showing who won and asking the user if he wants to play again. 
 
