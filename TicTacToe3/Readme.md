@@ -80,11 +80,11 @@ Each of the rows above can be easily represented with a variable that holds an i
 
 4. **Game goes on:** Game keeps repeating until there is a tie or a win.
 
-![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/TicTacToeRemainingSteps.png?raw=true)
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/RemainingMoves.png?raw=true)
 
-4. **Game ends:** If the game ends because a player wins, then a dialog will appear showing who won and asking the user if he wants to play again. 
+4. **Game ends:** If the game ends, then a dialog will appear showing who won and asking the user if he wants to play again. 
 
-![whostarts](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/WhoGoesFirst%3F.png?raw=true)
+![whostarts](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/Wins.png?raw=true)
 
 #### Tic-Tac-Toe Example
 Your output should match the example provided below.
