@@ -68,13 +68,9 @@ Each of the rows above can be easily represented with a variable that holds an i
 
 1. **Who goes first?:** Your program must ask if the user wants to go first. If the user does not want to go first then the computer starts as X.
 
-```
-Tic-Tac-Toe
+![whostarts](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/WhoGoesFirst%3F.png?raw=true)
 
-Would you like to go first? (Y/N): Y
-```
-
-2. **User's move:** Your program must ask the user to place his token on the board. The board spaces are numbered so that the user can tell you where to place it in the board. Remember to validate the user's input to enforce that the value chosen is in the board.
+2. **User's move:** Your program must wait until the user.
 
 ```
 You start as X. I am O.
@@ -111,28 +107,13 @@ R3 | 6 | 7 | O |
 
 Select the square number you want to place an X on: 
 ```
+4. **Game goes on:** Game keeps repeating until there is a tie or a win.
 
-4. **Game ends:** If the game ends because a player wins, then the condition for winning will be displayed. Once the game ends, you need to ask the user if he wants to play again.
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/TicTacToe.png?raw=true)
 
-```
-Ok. I'll proceed. My turn.
-Third Column Same
-Who won?:  O 
+4. **Game ends:** If the game ends because a player wins, then a dialog will appear showing who won and asking the user if he wants to play again. 
 
-Tic-Tac-Toe Board:
-
-     C1  C2  C3
-   +---+---+---+
-R1 | X | 1 | O |
-   +---+---+---+
-R2 | X | X | O |
-   +---+---+---+
-R3 | 2 | 3 | O |
-   +---+---+---+
-
-Would you like to play again? (Y/N): Y
-```
-
+![whostarts](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/WhoGoesFirst%3F.png?raw=true)
 
 #### Tic-Tac-Toe Example
 Your output should match the example provided below.
