@@ -82,7 +82,9 @@ Each of the rows above can be easily represented with a variable that holds an i
 
 ![whostarts](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe3/Wins.png?raw=true)
 
-#### Acknowledgements
+### Resources & Acknowledgements
+
+You can download the application's artwork and other resources from this link. 
 
 The application and token icons used in this application were made by [Roundicons](https://roundicons.com) from [Flaticon.com](www.flaticon.com) 
 
