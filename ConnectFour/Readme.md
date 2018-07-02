@@ -25,7 +25,7 @@ Connect Four is a kid's game consisting of a 6x7 grid and two players. The playe
 ### Your Task
 Your task is to write a program that recreates the gameplay of **ConnectFour** and determines who won. 
 
-Let's assume we have the match below. From the rightmost grid it is clear that the red player won the match. We are using a zero to represent the red player's tokens and a one to represent the yellow player's tokens.
+Let's assume we have the match below. From the rightmost grid it is clear that the red player won the match. We are using a **zero** to represent the red player's tokens and a **one** to represent the yellow player's tokens.
 
 </br>
 
@@ -33,110 +33,87 @@ Let's assume we have the match below. From the rightmost grid it is clear that t
 
 </br>
 
-We use an array to store all of the rows. Each of the rows above can be easily represented with a variable that holds an integer number. An appropriate data type for this task would be `unsigned short` or `unsigned int`. A variable of type `unsigned short` can hold up to 2 bytes of information. A variable of type `unsigned int` can hold up to 4 bytes of information. Because we only need seven bits per row we can emply an array that stores six `unsigned short` elements.
+We use an array to store all of the rows. Each of the rows above can be easily represented with a variable that holds an integer number. An appropriate data type for this task would be `unsigned short` or `unsigned int`. A variable of type `unsigned short` can hold up to 2 bytes of information. A variable of type `unsigned int` can hold up to 4 bytes of information. Because we only need seven bits per row we can employ an array that stores six `unsigned short` elements.
 
 #### Problem Solving Steps
 
-1. **User Row Input:** Your program must ask the user to **input the decimal representation** of each row. Remember to validate the user's input to enforce that the values are between 0 and 7.
+1. **Who goes first?:** Your program must ask the user if he wishes to go first. The player who goes first plays the red tokens. The other player uses the yellow tokens. Remember to validate the user's input.
 
 ```
-Input Row #1 (Values between 0-7): 5
-Input Row #2 (Values between 0-7): 3
-Input Row #3 (Values between 0-7): 0
+Connect Four
+
+Do you want to go first? (Y/N): Y
+
+You start as the Red token.
+The PC is the Yellow token.
 ```
 
-2. **Display 3x3 Grid:** Your program must then **display the match representation** of the given numbers.
+2. **Display the board:** Your program must then display the game board.
 
 ```
-The following 3x3 Tic-Tac-Toe was given:
+Game:
 
-     C1  C2  C3
-   +---+---+---+
-R1 | X | O | X |
-   +---+---+---+
-R2 | O | X | X |
-   +---+---+---+
-R3 | O | O | O |
-   +---+---+---+
+  0   1   2   3   4   5   6
+
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+-----------------------------
 ```
 
-3. **Validate Match:** If the given match is not **possible** then you must ask the user to input valid values.
+3. **User's move:** Ask the user to place a token in a column. The token drops to the bottom of the column. Validate the user's input to ensure that the column is within the bounds of the game. If a column is filled or outside the bounds of the game, ask the user to pick another column.
 
 ```
-Input Row #1 (Values between 0-7): 6
-Input Row #2 (Values between 0-7): 6
-Input Row #3 (Values between 0-7): 6
-
-The following 3x3 Tic-Tac-Toe was given:
-
-     C1  C2  C3
-   +---+---+---+
-R1 | X | X | O |
-   +---+---+---+
-R2 | X | X | O |
-   +---+---+---+
-R3 | X | X | O |
-   +---+---+---+
-
-Not a valid Tic-Tac-Toe game!
-Play again.
-
-Input Row #1 (Values between 0-7):
-...
-...
+Pick a column (0 - 6): 1
 ```
 
-4. **Who won?:** If the given match is a valid Tic-Tac-Toe game then you must then **determine who won** and the mark combination that led the player to his victory.
+```
+Pick a column (0 - 6): 8
+Can't pick that column! Try again.
+```
 
-There are eight possible mark combinations that will lead a player to win the game.
-* First row same
-* Second row same
-* Third row same
-* First column same
-* Second column same
-* Third column same
-* Left diagonal same
-* Right diagonal same
-
-Make sure you use bitwise operators to extract the values from each row so you can test for those eight combinations.
+4. **Computer's move:** After the user has played. The computer will play automatically. The computer chooses a random column to play. The computer must pick a valid column at all times. If there are no empty spots on a column and there is no winner, then the game is a tie.
 
 ```
-Input Row #1 (Values between 0-7): 5
-Input Row #2 (Values between 0-7): 3
-Input Row #3 (Values between 0-7): 0
+Pick a column (0 - 6): 1
 
-The following 3x3 Tic-Tac-Toe was given:
+Game:
 
-     C1  C2  C3
-   +---+---+---+
-R1 | X | O | X |
-   +---+---+---+
-R2 | O | X | X |
-   +---+---+---+
-R3 | O | O | O |
-   +---+---+---+
+  0   1   2   3   4   5   6
 
-Third Row Same
-Who won?:  O
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   | R |   |   |   |   | Y |
+-----------------------------
+```
 
-Would you like to play again? (Y / N):
+4. **Who won?:** In order to win a player must place four tokens in a row to form a horizontal, vertical, or diagonal line. 
+Make sure you use bitwise operators to extract the values from each row so you can test for the winning conditions.
+
+```
+Game:
+
+  0   1   2   3   4   5   6
+
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   | Y | R |   |   |
+|   |   | Y | R | R | Y | R |
+|   |   | R | Y | Y | Y | R |
+|   | R | R | Y | Y | R | Y |
+-----------------------------
+
+The red player won.
 ```
 
 5. **Play Again?:** In the end, you must ask the user if he wishes to **play again**. If he does then ask for his input again, otherwise end the program.
 
 ```
-...
-Third Row Same
-Who won?:  O
-
 Would you like to play again? (Y / N): Y
-
-Input Row #1 (Values between 0-7):
-...
-...
 ```
-
-#### Tic-Tac-Toe Example
-Your output should match the example provided below.
-
-[![asciicast](https://asciinema.org/a/43h0lac8k382o5dqq6muoebhw.png)](https://asciinema.org/a/43h0lac8k382o5dqq6muoebhw)
