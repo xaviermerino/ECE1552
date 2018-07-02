@@ -34,7 +34,7 @@ Let's assume we have the match below. From the rightmost grid it is clear that t
 
 </br>
 
-We use a Singly Linked List to store all of the rows. Each of the rows above can be easily represented with a variable that holds an integer number. An appropriate data type for this task would be `unsigned short` or `unsigned int`. A variable of type `unsigned short` can hold up to 2 bytes of information. A variable of type `unsigned int` can hold up to 4 bytes of information. Because we only need seven bits per row we can employ an array that stores six `unsigned short` elements.
+We use a `SinglyLinkedList` to store all of the rows. Each of the rows above can be easily represented with a variable that holds an integer number. An appropriate data type for this task would be `unsigned short` or `unsigned int`. A variable of type `unsigned short` can hold up to 2 bytes of information. A variable of type `unsigned int` can hold up to 4 bytes of information. Because we only need seven bits per row we can employ a `SinglyLinkedList` that stores six `unsigned short` elements.
 
 #### Problem Solving Steps
 
@@ -118,3 +118,25 @@ The red player won.
 ```
 Would you like to play again? (Y / N): Y
 ```
+
+#### Grading Criteria 
+
+ - Implement a templated SinglyLinkedList as the basis of the game’s board. You are free to implement as many helping functions as needed for this purpose. We require that you implement, at a minimum, an insert(), delete(), and getSize() function. Additionally we require that you overload the subscript operator [ ]. This will allow you to manipulate the list as an array. 
+
+ - Use bitwise operators to set, clear, and get the values located at a specific bit position in a row. The rows are elements in the SinglyLinkedList specified above. The elements must be of type unsigned short or any other smaller data type that you see fit.
+
+ - Perform input validation for all required user input. 
+
+ - Be able to identify, in code, the next available space in a column. **Hint:** Use the following function prototype as an example.
+
+```c++
+short getFreeIndexForColumn(unsigned short column);
+```
+
+ - No magic numbers. Make appropriate use of constants. **Hint:** Use the following enum to represent tokens. 
+ 
+```c++
+enum Token {Red, Yellow};
+```
+
+ - Replicate the gameplay as indicated in the Problem Solving Steps section above. Detect who won or if the game resulted in a tie.
