@@ -29,7 +29,7 @@ Let's assume we have the match below. From the left grid it is clear that player
 
 </br>
 
-![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/Game1DecimalRepresentation.png?raw=true)
+![game](https://github.com/xaviermerino/ECE1552/blob/master/ConnectFour/representation.png?raw=true)
 
 </br>
 
