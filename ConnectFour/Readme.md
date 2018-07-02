@@ -1,0 +1,165 @@
+## Connect Four
+
+### Overview
+**Connect Four** is a two-player connection game. The players choose a color and take turns dropping one colored disc from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The game's objective is to be the first player to form a horizontal, vertical, or diagonal line of four of one's own discs. 
+
+In this session, you will implement **Connect Four** by making use of **bitwise operators** and **arrays**. You will be recreating the game in C++ using console input and output.
+
+**In the process you will:**
+  * Make use of **control** and **repetition** structures for input validation.
+  * Make use of **arrays** to store the grid's rows.
+  * Make use of **bitwise operators** to handle the underlying bits in a row.
+  * Apply **formatting** rules to console output.
+  * Replicate the **gameplay** of the Connect Four game.
+
+
+### Introduction to Connect Four
+Connect Four is a kid's game consisting of a 6x7 grid and two players. The players, **Red** and **Yellow**, take turns dropping a disc into any slot in the top of the grid. The game continues until a player gets four of their color discs in a row (horizontally, vertically, or diagonally). The first player to put four discs in a row wins.
+
+</br>
+
+![connectfour](https://upload.wikimedia.org/wikipedia/commons/a/ad/Connect_Four.gif)
+
+</br>
+
+### Your Task
+Your task is to write a program that recreates the gameplay of **ConnectFour** and determines who won. 
+
+Let's assume we have the match below. From the left grid it is clear that player O won the match. The grid on the right is the match's binary representation. We are using a one to represent X's marks and a zero to represent O's marks.
+
+</br>
+
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/Game1DecimalRepresentation.png?raw=true)
+
+</br>
+
+We then assign a label to each row and column to make it easier to locate where the players' marks are.
+
+</br>
+
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/Game1Representationb.png?raw=true)
+
+</br>
+
+We have:
+* **Row 1:** The row containing the binary representation `101`.
+* **Row 2:** The row containing the binary representation `011`.
+* **Row 3:** The row containing the binary representation `000`.
+
+</br>
+
+You might have noticed that our Tic-Tac-Toe uses three bits per row to represent a match. This means that each row can be represented by an integer number between 0 and 7. The picture below shows all of these numbers and their binary representation.
+
+</br>
+
+![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/numbers.png?raw=true)
+
+</br>
+
+Each of the rows above can be easily represented with a variable that holds an integer number. An appropriate data type for this task would be `unsigned short` or `unsigned int`. A variable of type `unsigned short` can hold up to 2 bytes of information. A variable of type `unsigned int` can hold up to 4 bytes of information. Because we only need three bits per row we can use three `unsigned short` variables.
+
+#### Problem Solving Steps
+
+1. **User Row Input:** Your program must ask the user to **input the decimal representation** of each row. Remember to validate the user's input to enforce that the values are between 0 and 7.
+
+```
+Input Row #1 (Values between 0-7): 5
+Input Row #2 (Values between 0-7): 3
+Input Row #3 (Values between 0-7): 0
+```
+
+2. **Display 3x3 Grid:** Your program must then **display the match representation** of the given numbers.
+
+```
+The following 3x3 Tic-Tac-Toe was given:
+
+     C1  C2  C3
+   +---+---+---+
+R1 | X | O | X |
+   +---+---+---+
+R2 | O | X | X |
+   +---+---+---+
+R3 | O | O | O |
+   +---+---+---+
+```
+
+3. **Validate Match:** If the given match is not **possible** then you must ask the user to input valid values.
+
+```
+Input Row #1 (Values between 0-7): 6
+Input Row #2 (Values between 0-7): 6
+Input Row #3 (Values between 0-7): 6
+
+The following 3x3 Tic-Tac-Toe was given:
+
+     C1  C2  C3
+   +---+---+---+
+R1 | X | X | O |
+   +---+---+---+
+R2 | X | X | O |
+   +---+---+---+
+R3 | X | X | O |
+   +---+---+---+
+
+Not a valid Tic-Tac-Toe game!
+Play again.
+
+Input Row #1 (Values between 0-7):
+...
+...
+```
+
+4. **Who won?:** If the given match is a valid Tic-Tac-Toe game then you must then **determine who won** and the mark combination that led the player to his victory.
+
+There are eight possible mark combinations that will lead a player to win the game.
+* First row same
+* Second row same
+* Third row same
+* First column same
+* Second column same
+* Third column same
+* Left diagonal same
+* Right diagonal same
+
+Make sure you use bitwise operators to extract the values from each row so you can test for those eight combinations.
+
+```
+Input Row #1 (Values between 0-7): 5
+Input Row #2 (Values between 0-7): 3
+Input Row #3 (Values between 0-7): 0
+
+The following 3x3 Tic-Tac-Toe was given:
+
+     C1  C2  C3
+   +---+---+---+
+R1 | X | O | X |
+   +---+---+---+
+R2 | O | X | X |
+   +---+---+---+
+R3 | O | O | O |
+   +---+---+---+
+
+Third Row Same
+Who won?:  O
+
+Would you like to play again? (Y / N):
+```
+
+5. **Play Again?:** In the end, you must ask the user if he wishes to **play again**. If he does then ask for his input again, otherwise end the program.
+
+```
+...
+Third Row Same
+Who won?:  O
+
+Would you like to play again? (Y / N): Y
+
+Input Row #1 (Values between 0-7):
+...
+...
+```
+
+#### Tic-Tac-Toe Example
+Your output should match the example provided below.
+
+[![asciicast](https://asciinema.org/a/43h0lac8k382o5dqq6muoebhw.png)](https://asciinema.org/a/43h0lac8k382o5dqq6muoebhw)
