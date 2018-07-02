@@ -3,7 +3,7 @@
 ### Overview
 **Connect Four** is a two-player connection game. The players choose a color and take turns dropping one colored disc from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The game's objective is to be the first player to form a horizontal, vertical, or diagonal line of four of one's own discs. 
 
-In this session, you will implement **Connect Four** by making use of **bitwise operators** and **arrays**. You will be recreating the game in C++ using console input and output.
+In this session, you will implement **Connect Four** by making use of **bitwise operators** and a **Singly Linked List**. You will be recreating the game in C++ using console input and output.
 
 **In the process you will:**
   * Make use of **control** and **repetition** structures for input validation.
