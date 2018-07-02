@@ -25,7 +25,7 @@ Connect Four is a kid's game consisting of a 6x7 grid and two players. The playe
 ### Your Task
 Your task is to write a program that recreates the gameplay of **ConnectFour** and determines who won. 
 
-Let's assume we have the match below. From the left grid it is clear that player O won the match. The grid on the right is the match's binary representation. We are using a one to represent X's marks and a zero to represent O's marks.
+Let's assume we have the match below. From the rightmost grid it is clear that the red player won the match. We are using a zero to represent the red player's tokens and a one to represent the yellow player's tokens.
 
 </br>
 
@@ -33,30 +33,7 @@ Let's assume we have the match below. From the left grid it is clear that player
 
 </br>
 
-We then assign a label to each row and column to make it easier to locate where the players' marks are.
-
-</br>
-
-![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/Game1Representationb.png?raw=true)
-
-</br>
-
-We have:
-* **Row 1:** The row containing the binary representation `101`.
-* **Row 2:** The row containing the binary representation `011`.
-* **Row 3:** The row containing the binary representation `000`.
-
-</br>
-
-You might have noticed that our Tic-Tac-Toe uses three bits per row to represent a match. This means that each row can be represented by an integer number between 0 and 7. The picture below shows all of these numbers and their binary representation.
-
-</br>
-
-![game](https://github.com/xaviermerino/ECE1552/blob/master/TicTacToe/numbers.png?raw=true)
-
-</br>
-
-Each of the rows above can be easily represented with a variable that holds an integer number. An appropriate data type for this task would be `unsigned short` or `unsigned int`. A variable of type `unsigned short` can hold up to 2 bytes of information. A variable of type `unsigned int` can hold up to 4 bytes of information. Because we only need three bits per row we can use three `unsigned short` variables.
+We use an array to store all of the rows. Each of the rows above can be easily represented with a variable that holds an integer number. An appropriate data type for this task would be `unsigned short` or `unsigned int`. A variable of type `unsigned short` can hold up to 2 bytes of information. A variable of type `unsigned int` can hold up to 4 bytes of information. Because we only need seven bits per row we can emply an array that stores six `unsigned short` elements.
 
 #### Problem Solving Steps
 
