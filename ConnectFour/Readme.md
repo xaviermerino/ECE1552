@@ -117,3 +117,25 @@ The red player won.
 ```
 Would you like to play again? (Y / N): Y
 ```
+
+#### Grading Criteria 
+
+ - Implement an array as the basis of the game’s board. 
+
+ - Use bitwise operators to set, clear, and get the values located at a specific bit position in a row. The rows are elements in the array specified above. The elements must be of type unsigned short or any other smaller data type that you see fit.
+
+ - Perform input validation for all required user input. 
+
+ - Be able to identify, in code, the next available space in a column. **Hint:** Use the following function prototype as an example.
+
+```c++
+short getFreeIndexForColumn(unsigned short column);
+```
+
+ - No magic numbers. Make appropriate use of constants. **Hint:** Use the following enum to represent tokens. 
+ 
+```c++
+enum Token {Red, Yellow};
+```
+
+ - Replicate the gameplay as indicated in the Problem Solving Steps section above. Detect who won or if the game resulted in a tie.
