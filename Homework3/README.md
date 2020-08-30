@@ -1,4 +1,4 @@
-## Homework #3: Towers of Hanoi
+## Homework #2: Towers of Hanoi
 
 ### Overview
 In this homework you will make use of **arrays** and control flow structures to solve the classic game, **Towers of Hanoi**. This is a mathematical game that consists of three stacks and a number of disks. The game starts with the disks placed in the leftmost stack. The disks are placed in ascending order, this is, the smallest disk at the top. The goal of this game is to move the entire leftmost stack to the rightmost stack.
@@ -111,4 +111,4 @@ This is provided for you to get feedback on your code. You can attempt to fix it
 
 #### Submission
 
-You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is aLastname2016 then your zip file should be called `aLastname2016.zip`. The zip file should only contain the `main.cpp` file. Submit under Homework #3.
+You are expected to submit your a zip file in Canvas by the specified deadline. The zip file name must match your Tracks ID. For instance, if your Tracks ID is aLastname2016 then your zip file should be called `aLastname2016.zip`. The zip file should only contain the `main.cpp` file. Submit under Homework #2.
