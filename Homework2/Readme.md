@@ -1,4 +1,4 @@
-## Homework #4: Bit Streams
+## Homework: Bit Streams
 
 ### Table of Contents
 - [Overview](#overview)
