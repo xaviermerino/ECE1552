@@ -102,3 +102,5 @@ Sorted Array:
 	numbers[8] = 74
 	numbers[9] = 79
 ```
+
+* **Question #4:** An LED chaser/sequencer is a popular driving LED driving circuit. Given that LED chasers are composed of several LEDs and follow a lighting pattern, arrays are a suitable data structure to organize and control the lights. Populate a one-dimensional array with five Arduino pins. These pins will be used to control the status of the LEDs. Feel free to mix between PWM pins (for fade-in, fade-out effects) and normal digital pins. You must implement three distinct lighting patterns and toggle between them by pressing a push button. 
