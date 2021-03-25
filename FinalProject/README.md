@@ -51,11 +51,10 @@ void digitalWriteGeneric(uint8_t pin, bool isOn);
 void pinModeGeneric(uint8_t pin, bool isOutput);
 ```
 
-* You are required to create the functions `delayGeneric()` and `delayMicrosecondsGeneric()`. These functions replace the Arduino's `delay()` and `delayMicroseconds()` respectively. The function prototypes are provided below.
+* You are required to create the function `delayGeneric()`. This function replaces the Arduino's `delay()`. The function prototype is provided below.
 
 ```c++
 void delayGeneric(unsigned long ms);
-void delayMicrosecondsGeneric(unsigned long us);
 ```
 
 * Create a function of your own to handle the tone playing.
